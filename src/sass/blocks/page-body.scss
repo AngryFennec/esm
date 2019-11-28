@@ -1,0 +1,16 @@
+.page-body {
+  min-width: $mobile-min-width;
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+  line-height: 25px;
+  font-family: $font-family;
+}
+
+
+@include mobile {
+  .page-body {
+    font-size: 14px;
+    line-height: 17px;
+  }
+}

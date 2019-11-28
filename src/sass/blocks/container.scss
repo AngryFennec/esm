@@ -1,0 +1,12 @@
+.container {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: $desktop-large-width;
+  padding: 0 $desktop-padding;
+  margin: 0 auto;
+
+}
+
+
+@include mobile {
+}
