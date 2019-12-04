@@ -4,15 +4,191 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <title>ESM</title>
-
   <link rel="stylesheet" href="css/style.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
 </head>
 
 <body class="page-body">
+  <h1 class="visually-hidden">ESM</h1>
+  <header class="header">
+    <nav class="header__navigation">
+        <div class="header__logo-block">
+          <a href="#"><img src="img/logo.png" alt="Логотип компании" class="header__logo"></a>
+        </div>
+        <ul class="header__menu">
+          <li class="header__menu-item"><a href="#">Съемка</a></li>
+          <li class="header__menu-item"><a href="#">Работы</a></li>
+          <li class="header__menu-item"><a href="#">VR</a></li>
+          <li class="header__menu-item"><a href="#">Команда</a></li>
+          <li class="header__menu-item"><a href="#">Отзывы</a></li>
+        </ul>
+        <ul class="header__contacts">
+          <li class="header__contacts-item"><a href="tel:+79118373390"> +7 (911) 837-33-90</a></li>
+        </ul>
+        <ul class="header__lang-list">
+          <li class="header__lang-item header__lang-item--active"><a href="#">RU</a></li>
+          <li class="header__lang-item"><a href="#">EN</a></li>
+        </ul>
+    </nav>
+  </header>
   <div class="container">
-    <h1>ESM</h1>
+    <section class="promo">
+      <div class="promo__info-block">
+          <h2 class="promo__header h2 h2--big">ВИДЕОПРОДАКШН</h2>
+          <p class="promo__description">Медиа сопровождение бизнеса от идеи до результата</p>
+          <a class="promo__button button">Заказать звонок</a>
+          <ul class="promo__social-list social-list">
+            <li class="social-list__item"><a href="#"><img src="img/insta-logo.png" alt="instagram-link"></a></li>
+            <li class="social-list__item"><a href="#"><img src="img/vk-logo.png" alt="vk-link"></a></li>
+            <li class="social-list__item"><a href="#"><img src="img/fb-logo.png" alt="fb-link"></a></li>
+          </ul>
+      </div>
+      <div class="promo__video-block">
+        <img src="img/skin.png" alt="video" class="promo__video-skin">
+        <iframe src="" frameborder="0" class="visually-hidden"></iframe>
+        <img src="img/play.png" alt="play video button">
+        <p class="promo__video-action">Смотреть видео</p>
+        <ul class="promo__video-categories">
+          <li class="promo__video-category"><a href="#">Ивенты</a></li>
+          <li class="promo__video-category"><a href="#">Конференции</a></li>
+          <li class="promo__video-category"><a href="#">Презентации</a></li>
+          <li class="promo__video-category"><a href="#">VR</a></li>
+        </ul>
+      </div>
+    </section>
+    <section class="works">
+      <h2 class="works__header h2">ПОСЛЕДНИЕ РАБОТЫ</h2>
+      <ul class="works__menu other-links">
+        <li class="other-links__item"><a href="#">Процесс</a></li>
+        <li class="other-links__item"><a href="#">Портфолио</a></li>
+        <li class="other-links__item"><a href="#">Команда</a></li>
+      </ul>
+      <ul class="works__list">
+        <li class="works__item"><img src="img/works-1.jpg" alt=""></li>
+        <li class="works__item"><img src="img/works-2.jpg" alt=""></li>
+        <li class="works__item"><img src="img/works-3.jpg" alt=""></li>
+        <li class="works__item"><img src="img/works-4.jpg" alt=""></li>
+        <li class="works__item"><img src="img/works-5.jpg" alt=""></li>
+        <li class="works__item"><img src="img/works-6.jpg" alt=""></li>
+      </ul>
+      <a href="#" class="works__button button">Все работы</a>
+    </section>
+    <section class="process">
+        <h2 class="works__header h2">Процесс работы</h2>
+        <ul class="works__menu other-links">
+          <li class="other-links__item"><a href="#">Портфолио</a></li>
+          <li class="other-links__item"><a href="#">Команда</a></li>
+          <li class="other-links__item"><a href="#">Отзывы</a></li>
+        </ul>
+        <ol class="process__list">
+          <li class="process__stage">
+            <div class="process__stage-card stage-card stage-card--active">
+              <div class="stage-card__number-block">
+                <span class="stage-card__number">1</span>
+                <span class="stage-card__name">Пре-продакшн</span>
+              </div>
+              <div class="stage-card__description-block">
+                <p>Закулисный и фундаментальный этап</p>
+                <p>Мы разрабатываем концепцию съемки, подчеркивая уникальность и детали вашего проекта.</p>
+                <p>У нас в руках самые современные фишки и визуальные эффекты для создания видеофильма, ролика или клипа вашей мечты.</p>
+              </div>
+            </div>
+          </li>
+          <li class="process__stage">
+            <div class="process__stage-card stage-card stage-card--active">
+              <div class="stage-card__number-block">
+                <span class="stage-card__number">2</span>
+                <span class="stage-card__name">Креатив</span>
+              </div>
+              <div class="stage-card__description-block">
+                <p>Закулисный и фундаментальный этап</p>
+                <p>Мы разрабатываем концепцию съемки, подчеркивая уникальность и детали вашего проекта.</p>
+                <p>У нас в руках самые современные фишки и визуальные эффекты для создания видеофильма, ролика или клипа вашей мечты.</p>
+              </div>
+            </div>
+          </li>
+          <li class="process__stage">
+            <div class="process__stage-card stage-card stage-card--active">
+              <div class="stage-card__number-block">
+                <span class="stage-card__number">3</span>
+                <span class="stage-card__name">Продакшн</span>
+              </div>
+              <div class="stage-card__description-block">
+                <p>Закулисный и фундаментальный этап</p>
+                <p>Мы разрабатываем концепцию съемки, подчеркивая уникальность и детали вашего проекта.</p>
+                <p>У нас в руках самые современные фишки и визуальные эффекты для создания видеофильма, ролика или клипа вашей мечты.</p>
+              </div>
+            </div>
+          </li>
+          <li class="process__stage">
+            <div class="process__stage-card stage-card stage-card--active">
+              <div class="stage-card__number-block">
+                <span class="stage-card__number">4</span>
+                <span class="stage-card__name">Пост-продакшн</span>
+              </div>
+              <div class="stage-card__description-block">
+                <p>Закулисный и фундаментальный этап</p>
+                <p>Мы разрабатываем концепцию съемки, подчеркивая уникальность и детали вашего проекта.</p>
+                <p>У нас в руках самые современные фишки и визуальные эффекты для создания видеофильма, ролика или клипа вашей мечты.</p>
+              </div>
+            </div>
+          </li>
+        </ol>
+        <a href="#">связаться с нами</a>
+    </section>
+    <section class="portfolio">
+      <h2 class="portfolio__header h2">Портфолио</h2>
+      <ul class="portfolio__menu other-links">
+        <li class="other-links__item"><a href="#">Команда</a></li>
+        <li class="other-links__item"><a href="#">Отзывы</a></li>
+        <li class="other-links__item"><a href="#">Контакты</a></li>
+        <li class="other-links__item"><a href="#">Главная</a></li>
+      </ul>
+      <ul class="portfolio__list">
+        <li class="portfolio__item">
+          <div class="portfolio__card portfolio-card">
+            <img src="img/portfolio-1.jpg" alt="" class="portfolio-card__image">
+          </div>
+          <div class="portfolio-card__info">
+            <h3 class="portfolio-card__header">Ивент</h3>
+            <p class="portfolio-card__description">Мы используем только высококлассные технологии и передовое оборудование для профессионального монтажа каждого видеопроекта.</p>
+            <a class="portfolio-card__link" href="#">Все работы</a>
+          </div>
+        </li>
+        <li class="portfolio__item">
+          <div class="portfolio__card portfolio-card">
+            <img src="img/portfolio-2.jpg" alt="" class="portfolio-card__image">
+          </div>
+          <div class="portfolio-card__info">
+            <h3 class="portfolio-card__header">Ивент</h3>
+            <p class="portfolio-card__description">Мы используем только высококлассные технологии и передовое оборудование для профессионального монтажа каждого видеопроекта.</p>
+            <a class="portfolio-card__link" href="#">Все работы</a>
+          </div>
+        </li>
+        <li class="portfolio__item">
+          <div class="portfolio__card portfolio-card">
+            <img src="img/portfolio-3.jpg" alt="" class="portfolio-card__image">
+          </div>
+          <div class="portfolio-card__info">
+            <h3 class="portfolio-card__header">Ивент</h3>
+            <p class="portfolio-card__description">Мы используем только высококлассные технологии и передовое оборудование для профессионального монтажа каждого видеопроекта.</p>
+            <a class="portfolio-card__link" href="#">Все работы</a>
+          </div>
+        </li>
+        <li class="portfolio__item">
+          <div class="portfolio__card portfolio-card">
+            <img src="img/portfolio-4.jpg" alt="" class="portfolio-card__image">
+          </div>
+          <div class="portfolio-card__info">
+            <h3 class="portfolio-card__header">Ивент</h3>
+            <p class="portfolio-card__description">Мы используем только высококлассные технологии и передовое оборудование для профессионального монтажа каждого видеопроекта.</p>
+            <a class="portfolio-card__link" href="#">Все работы</a>
+          </div>
+        </li>
+      </ul>
+      <a class="portfolio__button button" href="#">Связаться с нами</a>
+    </section>
   </div>
 </body>
 
