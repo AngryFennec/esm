@@ -1,0 +1,23 @@
+h2 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 94%;
+    letter-spacing: 0.04em;
+    color: $white;
+    position: relative;
+    padding-left: 20px;
+    text-transform: uppercase;
+
+    &::before {
+        content:"";
+        position: absolute;
+        left: 0;
+        top: 9px;
+        width: 12px;
+        height: 35px;
+        background-color: $red;
+    }
+}
+
