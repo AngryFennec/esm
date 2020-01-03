@@ -4,3 +4,5 @@
  */
 
 //= vendor/picturefill.js
+//= vendor/swiper.js
+//= vendor/jquery.js

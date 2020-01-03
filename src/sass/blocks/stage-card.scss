@@ -1,0 +1,205 @@
+.stage-card {
+    display: flex;
+    background: linear-gradient(90.36deg, #1C1F26 48.5%, rgba(33, 36, 43, 0) 102.03%);
+    border-left: 1px solid $stage-border;
+    margin-bottom: 32px;
+    min-height: 220px;
+
+    &:hover {
+        border-color: $red;
+
+        & img{
+            filter: grayscale(0);
+        }
+
+        & .stage-card__number-block {
+            border-color: $red;
+            color: $red;
+
+            &::before {
+                color: $red;
+            }
+        }
+
+        & .stage-card__name {
+            color: $red;
+        }
+
+        & p {
+            color: #C3C3C3;
+        }
+
+        & .stage-card__title {
+            color: $white;
+        }
+    }
+}
+
+.stage-card__number-block {
+    position: relative;
+    width: 225px;
+    border-right: 1px solid $stage-border;
+    flex-shrink: 0;
+
+    &::before {
+        counter-increment: process;
+        content: counter(process); 
+        position: absolute;
+        font-weight: 600;
+        font-size: 160px;
+        line-height: 94%;
+        color: $stage-border;
+        left: 50%;
+        top: 50%;
+        transform: translate(-55%, -50%);
+    }
+}
+
+.stage-card__name {
+    position: absolute;
+    display: block;
+    word-wrap: normal;
+    height: 60px;
+    top: 50%;
+    transform: translateY(-50%) translateX(-50%) rotate(-90deg);
+    left: 100%;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 94%;
+    letter-spacing: -0.02em;
+    color: $stage-border;
+
+    &--mobile {
+        display: none;
+        position: relative;
+        top: 0;
+        transform: translateY(0) translateX(0) rotate(0);
+        left:0;
+        height: auto;
+    }
+}
+
+.stage-card__description-block {
+    position: relative;
+    padding: 50px 25px 40px 25px;
+    overflow: hidden;
+    flex-grow: 1;
+
+    & p {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 120%;
+        color: rgba(195, 195, 195, 0.2);
+        max-width: 625px;
+    }
+
+    & .stage-card__title {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 94%;
+        color: #9B9B9B;
+        margin-top: 0;
+    }
+}
+
+.stage-card img {
+    position: absolute;
+    filter: grayscale(100%);
+    z-index: -1;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: auto;
+}
+
+@media (max-width: 768px) {
+    .stage-card {
+            border-color: $red;
+            min-height: auto;
+    
+            & img{
+                filter: grayscale(0);
+            }
+    
+            & .stage-card__number-block {
+                width: 100px;
+                border: none;
+                color: $red;
+    
+                &::before {
+                    color: $red;
+                    font-weight: 600;
+                    font-size: 65px;
+                    line-height: 94%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+    
+            & .stage-card__name {
+                color: $red;
+                display: none;
+
+                &--mobile {
+                    display: block;
+                    font-size: 16px;
+line-height: 94%;
+/* or 11px */
+
+letter-spacing: 0.02em;
+                }
+            }
+    
+            & p {
+                color: #C3C3C3;
+                font-size: 14px;
+                line-height: 120%;
+                /* or 12px */
+
+                letter-spacing: 0.01em;
+            }
+    
+            & .stage-card__title {
+                display: none;
+                color: $white;
+            }
+        }
+
+        .stage-card__description-block {
+            padding: 20px 20px 10px 0;
+        }
+
+}
+
+@media (max-width: 500px) {
+    .stage-card {
+        margin-bottom: 20px;
+            & .stage-card__number-block {
+                width: 60px;
+    
+                &::before {
+
+                    font-size: 45px;
+
+                }
+            }
+    
+            & .stage-card__name {
+                &--mobile {
+                    display: block;
+                    font-size: 12px;
+                }
+            }
+    
+            & p {
+
+                font-size: 10px;
+
+            }
+
+        }
+
+        .stage-card__description-block {
+            padding: 20px 20px 10px 0;
+        }
+
+}

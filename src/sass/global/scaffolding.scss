@@ -13,5 +13,7 @@ body {
   background: url('../img/back.jpg');
   position: relative;
   z-index: -4;
+  counter-reset: process;
   font-family: $font-family;
 }
+
