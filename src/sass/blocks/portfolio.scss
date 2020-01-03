@@ -1,0 +1,228 @@
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1208px;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.portfolio__header {
+    margin-right: 45px;
+}
+
+.portfolio__item {
+    display: flex;
+    align-items: stretch;
+    margin-bottom: 65px;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.portfolio__card {
+    position: relative;
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.portfolio-card__info {
+    padding-left: 80px;
+    padding-right: 35px;
+    padding-bottom: 30px;
+}
+
+.portfolio-card__description {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 120%;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.portfolio-card__header{
+    display: inline-block;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 94%;
+    color: $white;
+    margin-top: 35px;
+    margin-bottom: 16px;
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -13px;
+        height: 1px;
+        width: calc(100% + 55px);
+        background-color: $red;
+    }
+}
+
+.portfolio-card__link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 120%;
+    color: $white;
+    text-decoration: none;
+    position: relative;
+    padding-right: 20px;
+
+    &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 2px;
+        background: url("../img/red-arrow.svg") no-repeat center center;
+        background-size: 12px 19px;
+        width: 12px;
+        height: 19px;
+    }
+}
+
+.portfolio__header-block {
+    display: flex;
+    align-items: flex-end;
+    align-self: stretch;
+}
+
+.portfolio__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 146px;
+    margin-bottom: 52px;
+}
+
+@media (max-width: 1250px) {
+    .portfolio__header-block {
+        padding-left: 20px;
+    }
+    .portfolio__list {
+        margin-top: 80px;
+    }
+
+    .portfolio-card__info {
+        padding-left: 30px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+    }
+
+    .portfolio-card__description {
+        font-size: 16px;
+    }
+
+    .portfolio-card__header {
+        font-size: 25px;
+        margin-bottom: 0;
+
+        &::after {
+            bottom: -8px;
+        }
+    }
+}
+
+@media (max-width: 960px) {
+    .portfolio__card {
+        width: 230px;
+        height: 299px;
+        overflow: hidden;
+        flex-shrink: 0;
+        position: relative;
+
+        & img {
+            position: absolute;
+            right: -30px;
+            top: 0;
+            height: 100%;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .portfolio__header {
+        margin-right: 15px;
+    }
+    .portfolio__list {
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+    .portfolio__item {
+        margin-bottom: 20px;
+    }
+    .portfolio__card {
+        height: auto;
+        width: 180px;
+    }
+    .portfolio-card__info {
+        padding: 20px 40px 20px 20px;
+    }
+
+    .portfolio-card__header {
+        margin-top: 0;
+        font-size: 14px;
+        line-height: 94%;
+        letter-spacing: 0.02em;
+
+        &::after {
+            width: 100%;
+        }
+    }
+
+    .portfolio-card__description {
+        font-size: 12px;
+        line-height: 120%;
+    }
+
+    .portfolio-card__link {
+        font-size: 14px;
+        line-height: 120%;
+        padding-right: 20px;
+
+        &::after {
+            width: 10px;
+            height: 13px;
+        }
+    }
+
+    .portfolio-card__image {
+        height: 230px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .portfolio-card__info {
+        padding-left: 12px;
+        padding-right: 12px;
+
+    }
+    .portfolio__card {
+        height: 160px;
+        width: 120px;
+
+        & img {
+            top: 20px;
+        }
+    }
+    .portfolio-card__header {
+        font-size: 12px;
+
+        &::after {
+            bottom: -4px;
+        }
+    }
+
+    .portfolio-card__description {
+        font-size: 10px;
+        line-height: 120%;
+    }
+
+    .portfolio-card__link {
+        font-size: 12px;
+        line-height: 120%;
+    }
+
+}

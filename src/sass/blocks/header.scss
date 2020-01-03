@@ -1,14 +1,16 @@
 .header *{
+    position: relative;
     font-family: 'Montserrat', sans-serif;
     color: $white;
+    z-index: 1;
 }
 
 .header__navigation {
     box-sizing: border-box;
     display: flex;
     width: 100%;
-    max-width: 1440px;
-    padding: 50px 115px 62px 115px;
+    max-width: 1248px;
+    padding: 50px 20px 62px 20px;
     margin: 0 auto;
     align-items: center;
 }
@@ -77,4 +79,29 @@
 
 .header__logo-block {
     margin-top: 3px;
+}
+
+@media(max-width: 1250px) {
+    .header__lang-list {
+        margin-left: 40px;
+        margin-top: -3px;
+    }
+
+    .header__contacts {
+        position: absolute;
+        left: 20px;
+        bottom: -450px;
+    }
+
+    .header__lang-list {
+        position: absolute;
+        right: 20px;
+        bottom: -450px;
+    }
+}
+
+@media(max-width: 980px) {
+    .header__menu {
+        display: none;
+    }
 }
