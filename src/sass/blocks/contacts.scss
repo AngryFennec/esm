@@ -1,0 +1,19 @@
+.contacts__header-block {
+
+        display: flex;
+        align-items: flex-end;
+        align-self: stretch;
+
+}
+
+.contacts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1208px;
+    padding: 0;
+    margin: 0 auto;
+    padding-bottom: 215px;
+
+}

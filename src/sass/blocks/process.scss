@@ -6,6 +6,8 @@
     max-width: 1208px;
     padding: 0;
     margin: 0 auto;
+    padding-bottom: 215px;
+
 }
 
 .process__header-block {
@@ -29,6 +31,9 @@
 }
 
 @media (max-width: 1250px) {
+    .process {
+        padding-bottom: 100px;
+    }
     .process__header-block {
         padding-left: 20px;
     }

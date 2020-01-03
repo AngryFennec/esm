@@ -1,3 +1,5 @@
+'use strict';
+
 var worksSlider;
 var worksSelector = Array.from(document.querySelectorAll('.works__swiper'));
 if (worksSelector.length > 0) {
@@ -31,3 +33,7 @@ if (worksSelector.length > 0) {
       console.log('12312')
   })
 }
+
+$(function() {
+  $("[data-fancybox]").fancybox();
+  });
