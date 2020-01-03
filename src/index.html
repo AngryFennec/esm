@@ -11,17 +11,17 @@
 
 <body class="page-body">
 <h1 class="visually-hidden">ESM</h1>
-  <header class="header">
+  <header class="header" id="header">
     <nav class="header__navigation">
         <div class="header__logo-block">
           <a href="index.html"><img src="img/logo.png" alt="Логотип компании" class="header__logo"></a>
         </div>
-        <ul class="header__menu">
-          <li class="header__menu-item"><a href="#works">Съемка</a></li>
+        <ul class="header__menu menu">
+          <li class="header__menu-item"><a href="#work">Съемка</a></li>
           <li class="header__menu-item"><a href="#process">Работы</a></li>
           <li class="header__menu-item"><a href="#portfolio">VR</a></li>
-          <li class="header__menu-item"><a href="#">Команда</a></li>
-          <li class="header__menu-item"><a href="#">Отзывы</a></li>
+          <li class="header__menu-item"><a href="#team">Команда</a></li>
+          <li class="header__menu-item"><a href="#testimonials">Отзывы</a></li>
         </ul>
         <ul class="header__contacts">
           <li class="header__contacts-item"><a href="tel:+79118373390"> +7 (911) 837-33-90</a></li>
@@ -37,7 +37,7 @@
       <div class="promo__info-block">
           <h2 class="promo__header h2 h2--big">ВИДЕОПРОДАКШН</h2>
           <p class="promo__description">Медиа сопровождение бизнеса от идеи до результата</p>
-          <a class="promo__button button" href="#">Заказать звонок</a>
+          <a class="promo__button button anchor" href="#contacts">Заказать звонок</a>
           <ul class="promo__social-list social-list">
             <li class="social-list__item"><a href="#"><img src="img/insta.png" alt="instagram-link"></a></li>
             <li class="social-list__item"><a href="#"><img src="img/vk.png" alt="vk-link"></a></li>
@@ -45,8 +45,8 @@
           </ul>
       </div>
       <div class="promo__video-block">
-        <img src="img/skin.png" alt="video" class="promo__video-skin" data-fancybox = 'promo'>
-        <img src="img/skin-2.jpg" alt="video" class="promo__video-skin promo__video-skin--2" data-fancybox = 'promo-2'>
+        <img src="img/skin.png" alt="video" class="promo__video-skin" >
+        <img src="img/skin-2.jpg" alt="video" class="promo__video-skin promo__video-skin--2" >
         <iframe src="" frameborder="0" class="visually-hidden"></iframe>
         <div class="promo__play-block">
           <img src="img/play.svg" alt="play video button">
@@ -64,27 +64,27 @@
   </section>
 
 
-    <section class="works" id="works">
+    <section class="works" id="work">
       <div class="works__header-block">
         <h2 class="works__header h2">ПОСЛЕДНИЕ РАБОТЫ</h2>
         <div class="works__swiper swiper-container other-links-swiper">
-          <ul class="works__menu other-links swiper-wrapper">
-            <li class="other-links__item swiper-slide"><a href="#">Процесс</a></li>
-            <li class="other-links__item swiper-slide"><a href="#">Портфолио</a></li>
-            <li class="other-links__item swiper-slide"><a href="#">Команда</a></li>
+          <ul class="works__menu other-links swiper-wrapper menu">
+            <li class="other-links__item swiper-slide"><a href="#process">Процесс</a></li>
+            <li class="other-links__item swiper-slide"><a href="#portfolio">Портфолио</a></li>
+            <li class="other-links__item swiper-slide"><a href="#team">Команда</a></li>
           </ul>
         </div>
       </div>
       <div class="container">
         <ul class="works__list">
           <li class="works__item">
-            <a href="" data-fancybox = 'works'><img src="img/works-1.jpg" alt=""></a>
+            <a href="img/works-1.jpg" data-fancybox = 'works'><img src="img/works-1.jpg" alt=""></a>
           </li>
-          <li class="works__item"> <a href="" data-fancybox = 'works'><img src="img/works-2.jpg" alt=""></a></li>
-          <li class="works__item works__item--big"> <a href="" data-fancybox = 'works'><img src="img/works-3.jpg" alt=""></a></li>
-          <li class="works__item works__item--big"> <a href="" data-fancybox = 'works'><img src="img/works-4.jpg" alt=""></a></li>
-          <li class="works__item"> <a href="" data-fancybox = 'works'><img src="img/works-5.jpg" alt=""></a></li>
-          <li class="works__item "> <a href="" data-fancybox = 'works'><img src="img/works-6.jpg" alt=""></a></li>
+          <li class="works__item"> <a href="img/works-2.jpg" data-fancybox = 'works'><img src="img/works-2.jpg" alt=""></a></li>
+          <li class="works__item works__item--big"> <a href="img/works-3.jpg" data-fancybox = 'works'><img src="img/works-3.jpg" alt=""></a></li>
+          <li class="works__item works__item--big"> <a href="img/works-4.jpg" data-fancybox = 'works'><img src="img/works-4.jpg" alt=""></a></li>
+          <li class="works__item"> <a href="img/works-5.jpg" data-fancybox = 'works'><img src="img/works-5.jpg" alt=""></a></li>
+          <li class="works__item "> <a href="img/works-6.jpg" data-fancybox = 'works'><img src="img/works-6.jpg" alt=""></a></li>
         </ul>
     </div>
 
@@ -96,10 +96,10 @@
       <div class="process__header-block">
         <h2 class="process__header h2">Процесс работы</h2>
         <div class="process__swiper other-links-swiper swiper-container">
-          <ul class="process__menu other-links swiper-wrapper">
-            <li class="other-links__item swiper-slide"><a href="#">Портфолио</a></li>
-            <li class="other-links__item swiper-slide"><a href="#">Команда</a></li>
-            <li class="other-links__item swiper-slide"><a href="#">Отзывы</a></li>
+          <ul class="process__menu other-links swiper-wrapper menu">
+            <li class="other-links__item swiper-slide"><a href="#portfolio">Портфолио</a></li>
+            <li class="other-links__item swiper-slide"><a href="#team">Команда</a></li>
+            <li class="other-links__item swiper-slide"><a href="#testimonials">Отзывы</a></li>
           </ul>
         </div>
       </div>
@@ -162,18 +162,18 @@
           </div>
         </li>
       </ul>
-      <a class="process__button button" href="#">Cвязаться с нами</a>
+      <a class="process__button button anchor" href="#contacts">Cвязаться с нами</a>
     </section>
 
     <section class="portfolio" id="portfolio">
       <div class="portfolio__header-block">
         <h2 class="portfolio__header h2">Портфолио</h2>
         <div class="portfolio__swiper other-links-swiper swiper-container">
-          <ul class="portfolio__menu other-links swiper-wrapper">
-            <li class="other-links__item swiper-slide"><a href="#">Команда</a></li>
-            <li class="other-links__item swiper-slide"><a href="#">Отзывы</a></li>
-            <li class="other-links__item swiper-slide"><a href="#">Контакты</a></li>
-            <li class="other-links__item swiper-slide"><a href="#">Главная</a></li>
+          <ul class="portfolio__menu other-links swiper-wrapper menu">
+            <li class="other-links__item swiper-slide"><a href="#team">Команда</a></li>
+            <li class="other-links__item swiper-slide"><a href="#testimonials">Отзывы</a></li>
+            <li class="other-links__item swiper-slide"><a href="#contacts">Контакты</a></li>
+            <li class="other-links__item swiper-slide"><a href="#header">Главная</a></li>
           </ul>
         </div>
       </div>
@@ -223,9 +223,45 @@
           </div>
         </li>
       </ul>
-      <a class="portfolio__button button" href="#">Связаться с нами</a>
+      <a class="portfolio__button button anchor" href="#contacts">Связаться с нами</a>
     </section>
-
+    <section class="team" id="team">
+      <div class="team__header-block">
+        <h2 class="team__header h2">Команда</h2>
+        <div class="team__swiper other-links-swiper swiper-container">
+          <ul class="team__menu other-links swiper-wrapper menu">
+            <li class="other-links__item swiper-slide"><a href="#testimonials">Отзывы</a></li>
+            <li class="other-links__item swiper-slide"><a href="#contacts">Контакты</a></li>
+            <li class="other-links__item swiper-slide"><a href="#header">Главная</a></li>
+            <li class="other-links__item swiper-slide"><a href="#work">Последние</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="testimonials" id="testimonials">
+      <div class="testimonials__header-block">
+        <h2 class="testimonials__header h2">Отзывы</h2>
+        <div class="testimonials__swiper other-links-swiper swiper-container">
+          <ul class="testimonials__menu other-links swiper-wrapper menu">
+            <li class="other-links__item swiper-slide"><a href="#contacts">Контакты</a></li>
+            <li class="other-links__item swiper-slide"><a href="#header">Главная</a></li>
+            <li class="other-links__item swiper-slide"><a href="#work">Последние работы</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="contacts" id="contacts">
+      <div class="contacts__header-block">
+        <h2 class="contacts__header h2">Контакты</h2>
+        <div class="contacts__swiper other-links-swiper swiper-container">
+          <ul class="contacts__menu other-links swiper-wrapper menu">
+            <li class="other-links__item swiper-slide"><a href="#header">Главная</a></li>
+            <li class="other-links__item swiper-slide"><a href="#work">Последние работы</a></li>
+            <li class="other-links__item swiper-slide"><a href="#process">Процесс</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
   <footer class="footer">
     <div class="footer__wrapper wrapper">
       <div class="footer__logo-container">

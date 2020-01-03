@@ -6,6 +6,7 @@
     max-width: 1208px;
     padding: 0;
     margin: 0 auto;
+    padding-bottom: 215px;
 }
 
 .portfolio__header {
@@ -97,6 +98,10 @@
 }
 
 @media (max-width: 1250px) {
+    .portfolio {
+        padding-bottom: 100px;
+    }
+
     .portfolio__header-block {
         padding-left: 20px;
     }
