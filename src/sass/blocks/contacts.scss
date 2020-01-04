@@ -3,7 +3,9 @@
         display: flex;
         align-items: flex-end;
         align-self: stretch;
-
+        max-width: 1208px;
+        width: 100%;
+        margin: 0 auto;
 }
 
 .contacts{
@@ -11,9 +13,119 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    max-width: 1208px;
+
     padding: 0;
     margin: 0 auto;
-    padding-bottom: 215px;
+min-height: 840px;
+position: relative;
+}
 
+.contacts__header {
+  margin-right: 40px;
+}
+
+.contacts__label {
+  min-height: 184px;
+  border-left: 9px solid #FF124C;
+  position: absolute;
+  top: 400px;
+  right: 6.5%;
+  //background: white;
+  width: 390px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 230%;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding-right: 10px;
+  padding-left: 20px;
+  padding-top: 5px;
+  & p {
+    margin: 0;
+  }
+}
+
+.contacts__map {
+  margin-top: 80px;
+  width: 100%;
+  min-height: 688px;
+  background: url("../img/map.png");
+}
+
+.contacts__form {
+  position: absolute;
+  top: 240px;
+  left: 8%;
+  width: 526px;
+  min-height:  540px;
+  background-color: rgba(50, 54, 63, 0.9);
+
+
+  & form {
+    margin: 0 auto;
+    max-width: 400px;
+    width: 100%;
+    padding-top: 73px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.contacts__form-btn {
+  width: 400px;
+height: 60px;
+color: #FFFFFF;
+border: none;
+text-align: center;
+font-family: "Montserrat";
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 94%;
+
+background: #FF124C;
+}
+
+.contacts__form-input {
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #ffffff;
+  width: 100%;
+  background: transparent;
+  padding-bottom: 6px;
+  margin-bottom: 45px;
+
+  &::placeholder {
+    font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 94%;
+
+color: rgba(255, 255, 255, 0.5);
+
+  }
+
+}
+
+.contacts__form-label {
+  font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 94%;
+color: #FFFFFF;
+margin-bottom: 18px;
+
+}
+
+.contacts__form-agree {
+  font-style: normal;
+font-weight: 300;
+font-size: 16px;
+line-height: 94%;
+/* identical to box height, or 15px */
+
+
+color: rgba(255, 255, 255, 0.7);
 }
