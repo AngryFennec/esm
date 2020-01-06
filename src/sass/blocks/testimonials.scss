@@ -1,9 +1,11 @@
 .testimonials__header-block {
 
-        display: flex;
-        align-items: flex-end;
-        align-self: stretch;
-
+  display: flex;
+  align-items: flex-end;
+  align-self: stretch;
+  max-width: 1208px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .testimonials{
@@ -11,9 +13,119 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    max-width: 1208px;
+    //max-width: 1208px;
     padding: 0;
     margin: 0 auto;
     padding-bottom: 215px;
+        position: relative;
+
+
+}
+
+.testimonials__header {
+  margin-right: 40px;
+}
+
+.testimonials__swiper-main {
+  padding-left: 120px;
+  max-width: 100%;
+margin-top: 80px;
+min-height: 600px;
+
+
+    .swiper-slide {
+      background: #2E3138;
+      width: 380px !important;
+      min-height: 360px;
+      padding-top: 40px;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-bottom: 37px;
+
+    }
+
+    .swiper-button-next, .swiper-button-prev {
+      width: 60px;
+      height: 60px;
+      background: #FF124C url('../img/swiper-btn.svg') no-repeat;
+      background-position: center center;
+      position: absolute;
+      top: 550px;
+      left: 500px;
+    }
+
+    .swiper-button-next {
+      transform: rotate(180deg);
+      left: 880px;
+    }
+
+    .swiper-button-next::after, .swiper-button-prev::after {
+      content:'';
+    }
+}
+
+
+.testimonials__slide-text {
+  font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 125%;
+color: #FFFFFF;
+}
+
+.testimonials__slide-who {
+  font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 94%;
+color: #FFFFFF;
+}
+
+.testimonials__slide-where {
+  font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 120%;
+color: rgba(255, 255, 255, 0.7);
+margin: 0;
+}
+
+.testimonials__slide-position {
+  font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 120%;
+color: rgba(255, 255, 255, 0.7);
+margin: 0;
+}
+.testimonials__slide-bottom {
+  display: flex;
+}
+
+.testimonials__slide-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonials__leave-btn {
+    width: 300px;
+    min-height:60px;
+    background: #FF124C;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 94%;
+    /* identical to box height, or 19px */
+    text-decoration: none;
+    padding-top: 21px;
+    padding-bottom: 21px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    color: #FFFFFF;
+
+    position: absolute;
+    top: 678px;
+    z-index: 5;
 
 }
