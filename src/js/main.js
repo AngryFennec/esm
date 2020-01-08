@@ -10,3 +10,4 @@
 //= modules/process.js
 //= modules/portfolio.js
 //= modules/testimonials.js
+//= modules/team.js
