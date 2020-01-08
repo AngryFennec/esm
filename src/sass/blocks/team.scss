@@ -28,6 +28,7 @@ position: relative;
 }
 
 .team__content {
+  margin-top: 80px;
   min-height: 879px;
   width: 100%;
   background: url("../img/team-back.jpg");
@@ -35,6 +36,8 @@ position: relative;
 
 .team__list-header {
   display: flex;
+  padding-left: 15px;
+  justify-content: space-between;
 }
 
 .team__list-item {
@@ -42,18 +45,29 @@ position: relative;
   &--active {
     display: block;
     position: relative;
-    width: 948px;
-height: 493px;
-padding-top: 100px;
-padding-left: 200px;
-padding-right: 100px;
-background: url("../img/team-1-back.svg") no-repeat;
   }
 
   &--maxim {
-    margin-top: 300px;
-    margin-left: 257px;
+    width: 948px;
+height: 493px;
+    margin-top: 372px;
+    margin-left: 227px;
+    padding-top: 107px;
+    padding-left: 230px;
+    padding-right: 190px;
     background: url("../img/team-1-back.svg") no-repeat;
+
+    .team__list-img {
+      width: 306px;
+      height: 534px;
+      position: absolute;
+      top: -23px;
+      left: -110px;
+      & img {
+        width: 100%;
+        height: auto;
+      }
+    }
   }
 
   &--vitaly {
@@ -83,17 +97,7 @@ background: url("../img/team-1-back.svg") no-repeat;
 }
 
 
-.team__list-img {
-  width: 267px;
-  height: 493px;
-  position: absolute;
-  top: 0;
-  left: -100px;
-  & img {
-    width: 100%;
-    height: auto;
-  }
-}
+
 
 .team__list-name {
   font-style: normal;
@@ -107,6 +111,7 @@ letter-spacing: 0.04em;
 color: #FFFFFF;
 text-transform: uppercase;
 position: relative;
+margin-bottom: 10px;
 &::before {
   position: absolute;
   content: "";
@@ -114,7 +119,7 @@ position: relative;
   height: 21px;
   background: #21242B;
   top: 2px;
-  left: -10px;
+  left: -15px;
 }
 }
 .team__list-position {
@@ -129,6 +134,8 @@ color: #FFFFFF;
 }
 
 .team__list-text {
+  margin-top: 22px;
+  margin-bottom: 45px;
   font-style: normal;
 font-weight: 500;
 font-size: 16px;
@@ -147,6 +154,15 @@ color: rgba(255, 255, 255, 0.7);
   list-style: none;
   display: flex;
 
+}
+
+.team__list-control {
+  padding-top: 30px;
+  margin-right: 17px;
+}
+
+.team__social-item {
+  margin-right: 16px;
 }
 
 .team__list-btn {
