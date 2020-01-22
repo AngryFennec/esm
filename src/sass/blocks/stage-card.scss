@@ -2,7 +2,7 @@
     display: flex;
     background: linear-gradient(90.36deg, #1C1F26 48.5%, rgba(33, 36, 43, 0) 102.03%);
     border-left: 1px solid $stage-border;
-    margin-bottom: 32px;
+    margin-bottom: 39px;
     min-height: 220px;
 
     &:hover {
@@ -81,14 +81,14 @@
 
 .stage-card__description-block {
     position: relative;
-    padding: 50px 25px 40px 25px;
+    padding: 50px 25px 33px 25px;
     overflow: hidden;
     flex-grow: 1;
 
     & p {
         font-weight: 500;
         font-size: 16px;
-        line-height: 120%;
+        line-height: 125%;
         color: rgba(195, 195, 195, 0.2);
         max-width: 625px;
     }
@@ -99,6 +99,7 @@
         line-height: 94%;
         color: #9B9B9B;
         margin-top: 0;
+        margin-bottom: 25px;
     }
 }
 
@@ -174,7 +175,7 @@ letter-spacing: 0.02em;
     .stage-card {
         margin-bottom: 20px;
             & .stage-card__number-block {
-                width: 60px;
+                width: 62px;
     
                 &::before {
 
@@ -191,7 +192,7 @@ letter-spacing: 0.02em;
             }
     
             & p {
-
+                margin-top: 6px;
                 font-size: 10px;
 
             }

@@ -10,13 +10,14 @@
 }
 
 .portfolio__header {
-    margin-right: 45px;
+    margin-right: 25px;
+    
 }
 
 .portfolio__item {
     display: flex;
     align-items: stretch;
-    margin-bottom: 65px;
+    margin-bottom: 61px;
     background: rgba(0, 0, 0, 0.2);
 }
 
@@ -29,16 +30,17 @@
 }
 
 .portfolio-card__info {
-    padding-left: 80px;
-    padding-right: 35px;
+    padding-left: 84px;
+    padding-right:60px;
     padding-bottom: 30px;
 }
 
 .portfolio-card__description {
     font-weight: 500;
-    font-size: 18px;
-    line-height: 120%;
+    font-size: 16px;
+    line-height: 125%;
     color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 20px;
 }
 
 .portfolio-card__header{
@@ -47,8 +49,8 @@
     font-size: 30px;
     line-height: 94%;
     color: $white;
-    margin-top: 35px;
-    margin-bottom: 16px;
+    margin-top: 52px;
+    margin-bottom: 10px;
     position: relative;
 
     &::after {
@@ -64,7 +66,7 @@
 
 .portfolio-card__link {
     font-weight: 500;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 120%;
     color: $white;
     text-decoration: none;
@@ -93,8 +95,8 @@
     list-style: none;
     margin: 0;
     padding: 0;
-    margin-top: 146px;
-    margin-bottom: 52px;
+    margin-top: 80px;
+    margin-bottom: 22px;
 }
 
 @media (max-width: 1250px) {
@@ -198,6 +200,9 @@
 }
 
 @media (max-width: 500px) {
+    .portfolio__list {
+        margin-top: 20px;
+    }
 
     .portfolio-card__info {
         padding-left: 12px;

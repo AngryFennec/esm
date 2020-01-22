@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>ESM</title>
+  <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
   <link rel="stylesheet" href="css/style.min.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
 </head>
@@ -17,7 +18,6 @@
         <a href="index.html"><img src="img/logo.png" alt="Логотип компании" class="header__logo"></a>
       </div>
       <ul class="header__menu menu">
-        <li class="header__menu-item"><a href="#work">Съемка</a></li>
         <li class="header__menu-item"><a href="#process">Работы</a></li>
         <li class="header__menu-item"><a href="#portfolio">VR</a></li>
         <li class="header__menu-item"><a href="#team">Команда</a></li>
@@ -45,20 +45,23 @@
         </ul>
       </div>
       <div class="promo__video-block">
-        <img src="img/skin.png" alt="video" class="promo__video-skin">
-        <img src="img/skin-2.jpg" alt="video" class="promo__video-skin promo__video-skin--2">
-        <iframe src="" frameborder="0" class="visually-hidden"></iframe>
+        <div class="promo__preview">
+          <img src="img/skin-2.jpg" width="850" height="auto" alt="video-preview" class="promo__video-skin">
+        </div>
+        
         <div class="promo__play-block">
-          <img src="img/play.svg" alt="play video button">
+          <a href="//player.vimeo.com/video/255070805?color=ffffff&title=0&byline=0&portrait=0" data-fancybox = "promo">
+            <img src="img/play.svg" alt="play video button">
+          </a>
           <p class="promo__video-action">Смотреть видео</p>
         </div>
 
       </div>
       <ul class="promo__video-categories">
-        <li class="promo__video-category"><a href="#">Ивенты</a></li>
-        <li class="promo__video-category"><a href="#">Конференции</a></li>
-        <li class="promo__video-category"><a href="#">Презентации</a></li>
-        <li class="promo__video-category"><a href="#">VR</a></li>
+        <li class="promo__video-category promo__video-category--active promo__video-category--event" data-link = "//player.vimeo.com/video/255070805?color=ffffff&title=0&byline=0&portrait=0" data-img = "img/skin-2.jpg"><a class="" href="#">Ивенты</a></li>
+        <li class="promo__video-category promo__video-category--conf" data-link = "//player.vimeo.com/video/321741265?color=ffffff&title=0&byline=0&portrait=0" data-img = "img/works-3.jpg"><a href="#">Конференции</a></li>
+        <li class="promo__video-category promo__video-category--present" data-link = "//player.vimeo.com/video/377026810?autoplay=1&color=ffffff&title=0&byline=0&portrait=0" data-img = "img/works-4.jpg"><a href="#">Презентации</a></li>
+        <li class="promo__video-category promo__video-category--vr" data-link = "//youtube.com/embed/DlY-jWtM1kk" data-img = "img/skin-2.jpg"><a href="#">VR</a></li>
       </ul>
     </div>
   </section>
@@ -78,13 +81,13 @@
     <div class="container">
       <ul class="works__list">
         <li class="works__item">
-          <a href="img/works-1.jpg" data-fancybox='works'><img src="img/works-1.jpg" alt=""></a>
+          <a href="//player.vimeo.com/video/377043758?autoplay=1&color=ffffff&title=0&byline=0&portrait=0" data-fancybox='works'><img src="img/works-1.jpg" alt=""></a>
         </li>
-        <li class="works__item"> <a href="img/works-2.jpg" data-fancybox='works'><img src="img/works-2.jpg" alt=""></a></li>
-        <li class="works__item works__item--big"> <a href="img/works-3.jpg" data-fancybox='works'><img src="img/works-3.jpg" alt=""></a></li>
-        <li class="works__item works__item--big"> <a href="img/works-4.jpg" data-fancybox='works'><img src="img/works-4.jpg" alt=""></a></li>
-        <li class="works__item"> <a href="img/works-5.jpg" data-fancybox='works'><img src="img/works-5.jpg" alt=""></a></li>
-        <li class="works__item "> <a href="img/works-6.jpg" data-fancybox='works'><img src="img/works-6.jpg" alt=""></a></li>
+        <li class="works__item"> <a href="//player.vimeo.com/video/377059416?autoplay=1&color=ffffff&title=0&byline=0&portrait=0" data-fancybox='works'><img src="img/works-2.jpg" alt=""></a></li>
+        <li class="works__item works__item--big"> <a href="//player.vimeo.com/video/255070805?autoplay=1&color=ffffff&title=0&byline=0&portrait=0" data-fancybox='works'><img src="img/works-3.jpg" alt=""></a></li>
+        <li class="works__item works__item--big"> <a href="//www.youtube.com/embed/ENau7AkayN8?controls=0" data-fancybox='works'><img src="img/works-4.jpg" alt=""></a></li>
+        <li class="works__item"> <a href="//player.vimeo.com/video/377026810?color=ffffff&title=0&byline=0&portrait=0" data-fancybox='works'><img src="img/works-5.jpg" alt=""></a></li>
+        <li class="works__item "> <a href="//player.vimeo.com/video/321741265?color=ffffff&title=0&byline=0&portrait=0" data-fancybox='works'><img src="img/works-6.jpg" alt=""></a></li>
       </ul>
     </div>
 

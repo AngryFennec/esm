@@ -6,7 +6,7 @@
     max-width: 1208px;
     padding: 0;
     margin: 0 auto;
-    padding-bottom: 215px;
+    padding-bottom: 217px;
 
 }
 
@@ -26,7 +26,7 @@
 }
 
 .process__header {
-    margin-right: 55px;
+    margin-right: 40px;
     flex-shrink: 0;
 }
 
@@ -51,5 +51,12 @@
 
     .process__list {
         margin-top: 35px;
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 500px) {
+    .process{
+        padding-bottom: 90px;
     }
 }
