@@ -12,7 +12,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    max-width: 1440px;
 
     padding: 0;
     margin: 0 auto;
@@ -51,7 +51,7 @@ position: relative;
   margin-top: 80px;
   width: 100%;
   min-height: 688px;
-  background: url("../img/map.png");
+  background: url("../img/map.png") no-repeat;
 }
 
 .contacts__form {
