@@ -4,7 +4,7 @@
     position: relative;
     min-height: 500px;
     overflow-x: hidden;
-    margin-bottom: 215px;
+    margin-bottom: 219px;
 
     &::before {
         content: "";
@@ -31,7 +31,7 @@
     font-size: 16px;
     line-height: 94%;
     margin-top: 17px;
-    margin-bottom: 41px;
+    margin-bottom: 50px;
 }
 
 .promo__info-block,
@@ -42,10 +42,10 @@
 
 .promo__video-block {
     position: absolute;
-    left: 54%;
+    left: 53.8%;
     margin-left: -90px;
     top: 0;
-    padding-top: 170px;
+    padding-top: 165px;
     bottom: 0;
 
     &::after {
@@ -71,6 +71,7 @@
     display: flex;
     justify-content: center;
     margin-top: 43px;
+    margin-left: -45px;
 
     & img {
         width: 49px;
@@ -92,7 +93,7 @@
 .promo__video-categories {
     position: absolute;
     bottom: 0;
-    left: 49.5%;
+    left: 49%;
     align-self: flex-end;
     display: flex;
     border-bottom: 3px solid $promo-border;
@@ -100,9 +101,9 @@
     margin: 130px 0 0 -80px;
     padding: 0;
     max-width: 790px;
-    width: 60%;
-    padding: 0 30px;
-    justify-content: space-between;
+    width: 58%;
+    // padding: 0 30px;
+    // justify-content: space-between;
 }
 
 .promo__video-category a {
@@ -110,26 +111,102 @@
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 300;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 94%;
     color: $promo-border;
     padding: 0;
-    padding-bottom: 15px;
-    display: block;
+    padding-bottom: 20px;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+.promo__video-category {
+    position: relative;
+
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 2px;
+        height: 6px;
+        background: $promo-border;
+        right: -1px;
+        bottom: -3px;
+    }
+
+    &--active::after {
+        content: "";
+        width: 100%;
+        height: 3px;
+        background-color: white;
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+    }
+
+    &--event{
+        width: 20%;
+    }
+
+    &--conf{
+        width: 30%;
+    }
+
+    &--present{
+        width: 30%;
+    }
+
+    &--vr{
+        width: 20%;
+
+        &::before {
+            display: none;
+        }
+    }
+}
+.promo__video-category--active a {
+    color: white;
+    position: relative;
 }
 
 .promo__header {
     margin-top: 118px;
     margin-bottom: 0px;
     margin-right: 100px;
+    padding-left: 21px;
     font-weight: 900;
     font-size: 50px;
     line-height: 94%;
     letter-spacing: 0.04em;
+
+    &::before {
+        top: 6px;
+        width: 12px;
+        height: 35px;
+    }
 }
 
 .promo__video-skin--2 {
     display: none;
+}
+
+.promo__preview {
+    transform: skew(-18.2deg);
+    margin-left: 58px;
+    height: 328px;
+    width: 735px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    & img {
+        min-width: 850px;
+        transform: skew(18.2deg);
+        // width: 850px !important;
+    }
+
 }
 
 @media(max-width: 1450px) {
@@ -144,9 +221,11 @@
     }
     .promo .container {
         flex-direction: column;
+        padding: 0;
     }
     .promo__video-block {
         position: relative;
+        padding: 0 20px;
         padding-top: 40px;
         padding-bottom: 50px;
         top: 0;
@@ -180,22 +259,12 @@
         margin: 0 auto;
         width: 100%;
         max-width: 100%;
-        margin-top: -34px
-    }
-
-    .promo__video-skin {
-        display: none;
-    }
-
-    .promo__video-skin--2 {
-        display: inline-block;
-        align-self: center;
-        width: 100%;
-        margin-left: 0;
+        margin-top: -10px;
     }
 
     .promo__info-block {
         align-items: center;
+        padding: 0 20px;
     }
 
     .promo__social-list {
@@ -207,6 +276,10 @@
 
     .promo__header {
         margin-right: 0;
+        
+        &::before {
+            height: 38px;
+        }
     }
 
     .promo__button {
@@ -214,7 +287,44 @@
     }
 
     .promo__play-block {
-        display: none;
+        height: 0;
+        margin: 0;
+
+        & p {
+            display: none;
+        }
+
+        & a {
+            display: block;
+            position: absolute;
+            bottom: 50%;
+            transform: translate(-50%, 50%);
+            left: 50%;
+            width: 49px;
+            height: 49px;
+        }
+
+        & img {
+            margin: 0;
+        }
+    }
+
+    .promo__preview {
+        width: 100%;
+        position: relative;
+        padding-top: 50%;
+        height: auto;
+        margin-left: 0;
+        transform: skew(0);
+        overflow: hidden;
+
+        & img {
+            position: absolute;
+            top: 0;
+            min-height: 100%;
+            transform: skew(0);
+            min-width: 100%;
+        }
     }
 }
 
@@ -223,9 +333,14 @@
         margin-top: 20px;
         font-size: 30px;
         line-height: 94%;
-/* or 19px */
-
         letter-spacing: 0.05em;
+        padding-left: 15px;
+
+        &::before {
+            top: 2px;
+            width: 8px;
+            height: 23px;
+        }
     }
 
     .promo__description {
@@ -240,4 +355,79 @@
         font-size: 16px;
     }
     
+}
+
+@media(max-width: 650px) {
+    .promo__video-category {
+         & a{
+            font-size: 14px;
+        }
+    }
+}
+
+@media(max-width: 500px) {
+    .promo {
+        margin-bottom: 66px;
+    }
+    
+    .promo__video-category {
+         & a{
+            font-size: 10px;
+            padding-bottom: 5px;
+        }
+    }
+
+    .promo__info-block {
+        align-items: flex-start;
+        padding: 0 25px;
+    }
+
+    .promo__video-block {
+        padding: 18px 23px 37px;
+    }
+
+    .promo__social-list {
+        top: 110px;
+    }
+
+    .promo__header {
+        margin-top: 40px;
+        font-size: 20px;
+        padding-left: 10px;
+
+        &::before {
+            width: 5px;
+            height: 14px;
+        }
+    }
+
+    .promo__button {
+        align-self: center;
+        margin-bottom: 108px;
+    }
+
+    .promo__description {
+        font-size: 12px;
+        line-height: 120%;
+        max-width: 220px;
+        margin-bottom: 37px;
+    }
+}
+
+@media(max-width: 380px) {
+    .promo__video-category {
+        &--conf{
+            width: 35%;
+        }
+        &--present{
+            width: 35%;
+        }
+
+        &--vr {
+            width: 12%
+        }
+        &--event {
+            width: 18%;
+        }
+    }
 }
