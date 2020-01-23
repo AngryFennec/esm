@@ -1,3 +1,6 @@
+.portfolio-page .header {
+    width: 100%;
+}
 .header *{
     position: relative;
     font-family: 'Montserrat', sans-serif;
@@ -91,10 +94,18 @@
         bottom: -450px;
     }
 
+    .portfolio-page .header__contacts {
+        position: static;
+    }
+
     .header__lang-list {
         position: absolute;
         right: 20px;
         bottom: -450px;
+    }
+
+    .portfolio-page .header__lang-list {
+        position: static;
     }
 }
 
@@ -151,5 +162,9 @@
         & .header__lang-item--active a {
             font-weight: 700;
         }
+    }
+
+    .portfolio-page .header__lang-list {
+        margin-left: 20px;
     }
 }
