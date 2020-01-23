@@ -222,7 +222,58 @@ white-space: nowrap;
   background: transparent;
 }
 
-@include desktop {
+@media (max-width: 1200px) {
+  .team__content {
+    height: 750px;
+  }
 
+  .team__list-item--vitaly {
+
+        .team__list-content {
+          top: 38.7%;
+          left: 45.8%;
+          width: 35%;
+        }
+
+  }
+}
+@include tablet {
+  .team__list-name {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 94%;
+        z-index: 20;
+    /* or 28px */
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 10px;
+  white-space: nowrap;
+
+  }
+
+  .team__list-position {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 94%;
+        z-index: 20;
+    /* identical to box height, or 19px */
+    color: #FFFFFF;
+  }
+
+  .team__list-text {
+    margin-top: 22px;
+    margin-bottom: 45px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 125%;
+        z-index: 20;
+    /* or 20px */
+    color: rgba(255, 255, 255, 0.7);
+  }
 
 }

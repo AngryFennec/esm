@@ -17,21 +17,27 @@
   }
 
   function setTop() {
+    var top = 0;
     if (teams[activeIndex].classList.contains('team__list-item--maxim')) {
-      teamContents[activeIndex].style.top = teamImgs[activeIndex].clientHeight*0.55 + "px";
+      top = teamImgs[activeIndex].clientHeight*0.55;
     }
     if (teams[activeIndex].classList.contains('team__list-item--vitaly')) {
-      teamContents[activeIndex].style.top = teamImgs[activeIndex].clientHeight*0.387 + "px";
+      top = teamImgs[activeIndex].clientHeight*0.387;
     }
     if (teams[activeIndex].classList.contains('team__list-item--gleb')) {
-      teamContents[activeIndex].style.top = teamImgs[activeIndex].clientHeight*0.507 + "px";
+      top = teamImgs[activeIndex].clientHeight*0.507;
     }
     if (teams[activeIndex].classList.contains('team__list-item--julia')) {
-      teamContents[activeIndex].style.top = teamImgs[activeIndex].clientHeight*0.367 + "px";
+      top = teamImgs[activeIndex].clientHeight*0.367;
     }
     if (teams[activeIndex].classList.contains('team__list-item--denis')) {
-      teamContents[activeIndex].style.top = teamImgs[activeIndex].clientHeight*0.467 + "px";
+      top = teamImgs[activeIndex].clientHeight*0.467;
     }
+    if (window.screen.width <=1200) {
+      top = top - 40;
+    }
+
+    teamContents[activeIndex].style.top = top + 'px';
   }
 
 
