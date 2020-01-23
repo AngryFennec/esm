@@ -5,6 +5,10 @@
   var nextBtns = Array.from(document.querySelectorAll('.team__list-btn--next'));
   var teams = Array.from(document.querySelectorAll('.team__list-item'));
   var teamSize = teams.length;
+  var activeIndex = 0;
+  var teamImgs = Array.from(document.querySelectorAll('.team__list-img img'));
+  var teamContents = Array.from(document.querySelectorAll('.team__list-content'));
+
 
   function teamsRemoveActive() {
     teams.forEach(function(item) {
@@ -12,13 +16,36 @@
     });
   }
 
+  function setTop() {
+    if (teams[activeIndex].classList.contains('team__list-item--maxim')) {
+      teamContents[activeIndex].style.top = teamImgs[activeIndex].clientHeight*0.55 + "px";
+    }
+    if (teams[activeIndex].classList.contains('team__list-item--vitaly')) {
+      teamContents[activeIndex].style.top = teamImgs[activeIndex].clientHeight*0.387 + "px";
+    }
+    if (teams[activeIndex].classList.contains('team__list-item--gleb')) {
+      teamContents[activeIndex].style.top = teamImgs[activeIndex].clientHeight*0.507 + "px";
+    }
+    if (teams[activeIndex].classList.contains('team__list-item--julia')) {
+      teamContents[activeIndex].style.top = teamImgs[activeIndex].clientHeight*0.367 + "px";
+    }
+    if (teams[activeIndex].classList.contains('team__list-item--denis')) {
+      teamContents[activeIndex].style.top = teamImgs[activeIndex].clientHeight*0.467 + "px";
+    }
+  }
+
+
   nextBtns.forEach(function(item, i) {
     item.addEventListener('click', function(e) {
       teamsRemoveActive();
       if (i === teamSize - 1) {
         teams[0].classList.add('team__list-item--active');
-      }
+        activeIndex = 0;
+      } else {
       teams[i + 1].classList.add('team__list-item--active');
+      activeIndex = i+1;
+    }
+      setTop();
     });
   });
 
@@ -27,12 +54,21 @@
       teamsRemoveActive();
       if (i === 0) {
         teams[teamSize - 1].classList.add('team__list-item--active');
-      }
+        activeIndex = teamSize-1;
+      } else {
       teams[i - 1].classList.add('team__list-item--active');
+      activeIndex = i-1;
+    }
+      setTop();
     });
   });
 
   teamsRemoveActive();
-  teams[0].classList.add('team__list-item--active');
+    teams[0].classList.add('team__list-item--active');
+  activeIndex = 0;
+  setTop();
 
+  window.addEventListener('resize', function(e) {
+    setTop();
+});
 })();
