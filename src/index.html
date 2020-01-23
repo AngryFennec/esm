@@ -232,6 +232,7 @@
     </ul>
     <a class="portfolio__button button anchor" href="#contacts">Связаться с нами</a>
   </section>
+
   <section class="team" id="team">
     <div class="team__header-block">
       <h2 class="team__header h2">Команда</h2>
@@ -244,9 +245,11 @@
         </ul>
       </div>
     </div>
+
     <section class="team__content">
       <ul class="team__list">
         <li class="team__list-item team__list-item--maxim team__list-item--active">
+          <div class="team__list-content">
           <div class="team__list-header">
             <h3 class="team__list-name">МАКСИМ РОДНОЙ</h3>
             <div class="team__list-control">
@@ -279,14 +282,16 @@
                 </a>
               </li>
             </ul>
-
-          <div class="team__list-img">
-            <picture>
-              <img src="img/team-1.png" alt="Максим" width="306" height="534">
-            </picture>
-        </div>
+</div>
+            <div class="team__list-img">
+              <picture>
+                <source srcset="img/mob-maxim.png" media="(max-width: 1024px)">
+                <img src="img/team-back-maxim.png" alt="Максим" width="1440" height="879">
+              </picture>
+          </div>
         </li>
         <li class="team__list-item team__list-item--vitaly">
+          <div class="team__list-content">
           <div class="team__list-header">
             <h3 class="team__list-name">ВИТАЛИЙ СТАВИЛОВ</h3>
             <div class="team__list-control">
@@ -319,11 +324,17 @@
                 </a>
               </li>
             </ul>
-          <picture class="team__list-img">
-            <img src="img/team-2.png" alt="Виталий" width="220" height="521">
-          </picture>
+</div>
+            <div class="team__list-img">
+              <picture>
+                <source srcset="img/mob-vitaly.png" media="(max-width: 1024px)">
+                <img src="img/team-back-vitaly.png" alt="Виталий" width="1440" height="879">
+              </picture>
+          </div>
         </li>
+
         <li class="team__list-item team__list-item--gleb">
+          <div class="team__list-content">
           <div class="team__list-header">
             <h3 class="team__list-name">ГЛЕБ КОСТЕНКО</h3>
             <div class="team__list-control">
@@ -356,13 +367,19 @@
                 </a>
               </li>
             </ul>
-          <picture class="team__list-img">
-            <img src="img/team-3.png" alt="Глеб" width="245" height="487">
-          </picture>
+</div>
+            <div class="team__list-img">
+              <picture>
+                <source srcset="img/mob-gleb.png" media="(max-width: 1024px)">
+                <img src="img/team-back-gleb.png" alt="Глеб" width="1440" height="879">
+              </picture>
+          </div>
         </li>
+
         <li class="team__list-item team__list-item--julia">
+          <div class="team__list-content">
           <div class="team__list-header">
-            <h3 class="team__list-name">ЮЛИЯ СТРЮК</h3>
+  <h3 class="team__list-name">ЮЛИЯ СТРЮК</h3>
             <div class="team__list-control">
               <button class="team__list-btn team__list-btn--prev"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M11.8984 1L1.99894 10.8995L11.8984 20.799" stroke="white" stroke-width="2" />
@@ -393,13 +410,18 @@
                 </a>
               </li>
             </ul>
-          <picture class="team__list-img">
-            <img src="img/team-4.png" alt="Юлия" width="245" height="487">
-          </picture>
+</div>
+            <div class="team__list-img">
+              <picture>
+                <source srcset="img/mob-julia.png" media="(max-width: 1024px)">
+                <img src="img/team-back-julia.png" alt="Юлия" width="1440" height="879">
+              </picture>
+          </div>
         </li>
         <li class="team__list-item team__list-item--denis">
+          <div class="team__list-content">
           <div class="team__list-header">
-            <h3 class="team__list-name">ДЕНИС УВАРОВ</h3>
+<h3 class="team__list-name">ДЕНИС УВАРОВ</h3>
             <div class="team__list-control">
               <button class="team__list-btn team__list-btn--prev"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M11.8984 1L1.99894 10.8995L11.8984 20.799" stroke="white" stroke-width="2" />
@@ -430,12 +452,18 @@
                 </a>
               </li>
             </ul>
-          <picture class="team__list-img">
-            <img src="img/team-5.png" alt="Денис" width="245" height="487">
-          </picture>
+  </div>
+            <div class="team__list-img">
+              <picture>
+                <source srcset="img/mob-denis.png" media="(max-width: 1024px)">
+                <img src="img/team-back-denis.png" alt="Денис" width="1440" height="879">
+              </picture>
+          </div>
         </li>
+
       </ul>
     </section>
+
   </section>
   <section class="testimonials" id="testimonials">
     <div class="testimonials__header-block">
@@ -507,7 +535,8 @@
           </div>
         </div>
       </div>
-      <div class="testinomials__pagination">
+      <div class="swiper-pagination"></div>
+      <div class="testimonials__pagination">
       <div class="testimonials__btn testimonials__btn--next swiper-button-next"></div>
         <a href="#" class="testimonials__leave-btn">Оставить отзыв</a>
       <div class="testimonials__btn testimonials__btn--prev swiper-button-prev"></div>

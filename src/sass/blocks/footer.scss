@@ -161,14 +161,14 @@ transition: 0.2s;
   }
   &--conference {
     order: 2;
-    text-align: right;
+
   }
   &--event {
     order: 3;
   }
   &--testinomials {
     order: 4;
-    text-align: right;
+
   }
   &--team {
     order: 5;
@@ -176,7 +176,7 @@ transition: 0.2s;
   &--phone {
     display: block;
     order: 6;
-    text-align: right;
+
   }
   &--presentation {
     order: 7;

@@ -30,6 +30,10 @@
   margin-top: 80px;
   min-height: 600px;
 
+  .swiper-pagination {
+    display: none;
+  }
+
   .swiper-slide {
     background: #2E3138;
     width: 380px !important;
@@ -135,11 +139,108 @@
   margin-right: 35px;
 }
 
-.testinomials__pagination {
+.testimonials__pagination {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   margin: 0 auto;
   max-width: 610px;
   margin-top: 75px;
+}
+
+@include mobile {
+  .testimonials__header {
+    margin-right: 28px;
+    margin-left: 20px;
+    &::before {
+      left: 4px;
+      width: 4px;
+      top: 2px;
+    }
+  }
+
+  .testimonials__swiper-main {
+    padding-left: 25px;
+    max-width: 100%;
+    margin-top: 42px;
+    min-height: 320px;
+    .swiper-pagination {
+      display: block;
+      position: relative;
+      margin-top: 17px;
+      //width: 100%;
+      padding-right: 20px;
+      //height: 1px !important;
+
+  }
+  .swiper-pagination-progressbar {
+    height: 1px;
+    background-color: rgba(255,255,255,0.5);
+  }
+  .swiper-pagination-progressbar-fill {
+    background-color: #FF124C;
+    height: 3px;
+    margin-top: -1px;
+  }
+
+
+    .swiper-slide {
+      box-sizing: border-box;
+      width: 250px !important;
+      min-height: 200px;
+      padding-top: 14px;
+      padding-left: 20px;
+      padding-right: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding-bottom: 10px;
+    }
+    .swiper-button-next,
+    .swiper-button-prev {
+      display: none;
+    }
+  }
+  .testimonials__slide-text {
+    font-size: 8px;
+    line-height: 120%;
+  }
+
+  .testimonials__slide-bottom {
+    margin-bottom: 12px;
+    & img {
+      width: 34px;
+      height: 34px;
+    }
+  }
+
+  .testimonials__slide-who {
+    font-size: 9px;
+line-height: 94%;
+margin-bottom: 6px;
+  }
+  .testimonials__slide-where, .testimonials__slide-position {
+    font-size: 9px;
+    line-height: 120%;
+  }
+
+  .testimonials__leave-btn {
+
+font-size: 16px;
+line-height: 94%;
+margin: 0 auto;
+    width: 240px;
+    min-height: 50px;
+    padding-top: 15px;
+  }
+
+.testimonials__pagination {
+  margin-left: -13px;
+  max-width: 100%;
+  margin-top: 28px;
+  }
+
+  .testimonials {
+    padding-bottom: 65px;
+  }
 }
