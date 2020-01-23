@@ -18,6 +18,8 @@
 
   function setTop() {
     var top = 0;
+    if (window.screen.width >=1025) {
+
     if (teams[activeIndex].classList.contains('team__list-item--maxim')) {
       top = teamImgs[activeIndex].clientHeight*0.55;
     }
@@ -38,6 +40,7 @@
     }
 
     teamContents[activeIndex].style.top = top + 'px';
+  }
   }
 
 
