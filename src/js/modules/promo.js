@@ -12,3 +12,5 @@ $('.promo__video-categories').on('click', function (evt) {
 
   }
 });
+
+new WOW().init();
