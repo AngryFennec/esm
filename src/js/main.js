@@ -9,5 +9,6 @@
 //= modules/works.js
 //= modules/process.js
 //= modules/portfolio.js
-
+//= modules/team.js
+//= modules/testimonials.js
 //= modules/promo.js

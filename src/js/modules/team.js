@@ -8,6 +8,7 @@
   var activeIndex = 0;
   var teamImgs = Array.from(document.querySelectorAll('.team__list-img img'));
   var teamContents = Array.from(document.querySelectorAll('.team__list-content'));
+  var teamContent = document.querySelector('.team__content');
 
 
   function teamsRemoveActive() {
@@ -18,7 +19,7 @@
 
   function setTop() {
     var top = 0;
-    if (window.screen.width >=1025) {
+    if (window.screen.width >=1024) {
 
     if (teams[activeIndex].classList.contains('team__list-item--maxim')) {
       top = teamImgs[activeIndex].clientHeight*0.55;
@@ -38,9 +39,23 @@
     if (window.screen.width <=1200) {
       top = top - 40;
     }
+    teams[activeIndex].style.marginBottom = 0;
+  teamContents[activeIndex].style.top = top + 'px';
+teams[activeIndex].style.paddingTop= 0;
 
-    teamContents[activeIndex].style.top = top + 'px';
+} else {
+  if (window.screen.width <=500) {
+    teamContents[activeIndex].style.top = 0;
+    teams[activeIndex].style.paddingTop = '83%';
+    teams[activeIndex].style.marginBottom = '15%';
   }
+  if (window.screen.width > 500 && window.screen.width < 800) {
+    teamContents[activeIndex].style.top = 0;
+    teams[activeIndex].style.paddingTop = '93%';
+    teams[activeIndex].style.marginBottom = '25%';
+  }
+}
+
   }
 
 
