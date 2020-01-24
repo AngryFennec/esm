@@ -7,3 +7,4 @@
 //= vendor/swiper.js
 //= vendor/jquery.js
 //= vendor/jquery.fancybox.js
+//= vendor/wow.min.js
