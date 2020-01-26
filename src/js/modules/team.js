@@ -10,6 +10,7 @@
   var teamContents = Array.from(document.querySelectorAll('.team__list-content'));
   var teamContent = document.querySelector('.team__content');
 
+if (teams && prevBtns && nextBtns && teamImgs && teamContents && teamContent) {
 
   function teamsRemoveActive() {
     teams.forEach(function(item) {
@@ -44,7 +45,15 @@
 teams[activeIndex].style.paddingTop= 0;
 
 } else {
-  if (window.screen.width <=500) {
+  teamContents[activeIndex].style.top = 0;
+  teams[activeIndex].style.paddingTop = '93%';
+  teams[activeIndex].style.marginBottom = '25%';
+  if (window.screen.width <=370) {
+    teamContents[activeIndex].style.top = 0;
+    teams[activeIndex].style.paddingTop = '78%';
+    teams[activeIndex].style.marginBottom = '15%';
+  }
+  if (window.screen.width <=500 && window.screen.width > 370)  {
     teamContents[activeIndex].style.top = 0;
     teams[activeIndex].style.paddingTop = '83%';
     teams[activeIndex].style.marginBottom = '15%';
@@ -54,6 +63,7 @@ teams[activeIndex].style.paddingTop= 0;
     teams[activeIndex].style.paddingTop = '93%';
     teams[activeIndex].style.marginBottom = '25%';
   }
+
 }
 
   }
@@ -95,4 +105,5 @@ teams[activeIndex].style.paddingTop= 0;
   window.addEventListener('resize', function(e) {
     setTop();
 });
+}
 })();
