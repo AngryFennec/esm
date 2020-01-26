@@ -37,7 +37,7 @@
   .swiper-slide {
     background: #2E3138;
     width: 380px !important;
-    min-height: 322px;
+    min-height: 360px;
     padding-top: 29px;
     padding-left: 45px;
     padding-right: 50px;
@@ -45,6 +45,7 @@
     flex-direction: column;
     justify-content: space-between;
     padding-bottom: 10px;
+    box-sizing: border-box;
   }
 
   .swiper-button-next,
@@ -231,7 +232,7 @@ line-height: 94%;
 margin: 0 auto;
     width: 240px;
     min-height: 50px;
-    padding-top: 15px;
+    padding-top: 20px;
   }
 
 .testimonials__pagination {
