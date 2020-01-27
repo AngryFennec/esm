@@ -148,18 +148,13 @@
   max-width: 610px;
   margin-top: 75px;
 }
+@media (max-width: 1250px) {
+  .testimonials__header-block {
+    padding-left: 20px;
+  }
+}
 
 @include mobile {
-  .testimonials__header {
-    margin-right: 28px;
-    margin-left: 20px;
-    &::before {
-      left: 4px;
-      width: 4px;
-      top: 2px;
-    }
-  }
-
   .testimonials__swiper-main {
     padding-left: 25px;
     max-width: 100%;

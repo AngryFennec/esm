@@ -29,6 +29,5 @@ if (pricesSelector.length > 0) {
 
   $(window).on('resize', function() {
       setTimeout(initPortfolioSwiper, 500)
-      console.log('12312')
   })
 }

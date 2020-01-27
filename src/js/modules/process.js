@@ -28,6 +28,5 @@ if (processSelector.length > 0) {
 
   $(window).on('resize', function() {
       setTimeout(initProcessSwiper, 500)
-      console.log('12312')
   })
 }

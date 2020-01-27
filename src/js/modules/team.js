@@ -1,6 +1,40 @@
 'use strict';
 
 (function() {
+  var teamSlider;
+  var pricesSelector = Array.from(document.querySelectorAll('.team__swiper'));
+  if (pricesSelector.length > 0) {
+  function initTeamSwiper() {
+    pricesSelector.foreach
+      if(document.body.clientWidth <= 1250) {
+
+           teamSlider = new Swiper('.team__swiper', {
+              slidesPerView: 'auto',
+              speed: 2000,
+              spaceBetween: 20,
+              loop:true,
+              autoplay: {
+                delay: 3000,
+              },
+            });
+
+          return teamSlider;
+      } else {
+          if (teamSlider) {
+           teamSlider.destroy();
+          }
+       teamSlider = undefined;
+          return teamSlider;
+      }
+  }
+
+  initTeamSwiper();
+
+  $(window).on('resize', function() {
+      setTimeout(initTeamSwiper, 500)
+  })
+}
+
   var prevBtns = Array.from(document.querySelectorAll('.team__list-btn--prev'));
   var nextBtns = Array.from(document.querySelectorAll('.team__list-btn--next'));
   var teams = Array.from(document.querySelectorAll('.team__list-item'));
