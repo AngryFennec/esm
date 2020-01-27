@@ -30,7 +30,6 @@ if (worksSelector.length > 0) {
 
   $(window).on('resize', function() {
       setTimeout(initWorksSwiper, 500)
-      console.log('12312')
   })
 }
 

@@ -12,3 +12,4 @@
 //= modules/team.js
 //= modules/testimonials.js
 //= modules/promo.js
+//= modules/contacts.js

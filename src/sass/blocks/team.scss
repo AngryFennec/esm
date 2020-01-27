@@ -222,6 +222,11 @@ white-space: nowrap;
   background: transparent;
 }
 
+@media (max-width: 1250px) {
+  .team__header-block {
+    padding-left: 20px;
+  }
+}
 @media (max-width: 1200px) {
   .team__content {
     height: 750px;
