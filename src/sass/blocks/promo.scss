@@ -290,6 +290,9 @@
     .promo__play-block {
         height: 0;
         margin: 0;
+        position: absolute;
+        bottom: calc(50% + 25px);
+        left: calc(50% - 25px);
 
         & p {
             display: none;
@@ -297,10 +300,6 @@
 
         & a {
             display: block;
-            position: absolute;
-            bottom: 50%;
-            transform: translate(-50%, 50%);
-            left: 50%;
             width: 49px;
             height: 49px;
         }

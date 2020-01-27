@@ -16,8 +16,8 @@
 
     padding: 0;
     margin: 0 auto;
-min-height: 840px;
-position: relative;
+    min-height: 840px;
+    // position: relative;
 }
 
 .contacts__header {
@@ -28,7 +28,7 @@ position: relative;
   min-height: 184px;
   border-left: 9px solid #FF124C;
   position: absolute;
-  top: 400px;
+  top: 250px;
   right: 6.5%;
   //background: white;
   width: 390px;
@@ -47,6 +47,9 @@ position: relative;
   }
 }
 
+.contacts__content {
+  position: relative;
+}
 .contacts__map {
   width: 100%;
   min-height: 688px;
@@ -55,7 +58,7 @@ position: relative;
 
 .contacts__form {
   position: absolute;
-  top: 240px;
+  top: 90px;
   left: 8%;
   width: 526px;
   min-height:  540px;
