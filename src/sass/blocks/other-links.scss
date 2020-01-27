@@ -2,6 +2,10 @@
 
 .other-links-swiper {
     flex-grow: 1;
+
+    &--en {
+        margin-left: 40px;
+    }
 }
 
 .other-links {
@@ -14,7 +18,11 @@
     & li {
         text-align: center;
         width: auto !important;
-        margin-right: 30px;
+        margin-right: 25px;
+    }
+
+    &--en li {
+        margin-right: 70px;
     }
 
 }
@@ -46,6 +54,10 @@
         line-height: 94%;
         letter-spacing: 0.04em;
         // margin-left: 10px;
+    }
+
+    .other-links-swiper--en {
+        margin-left: 0;
     }
 }
 
