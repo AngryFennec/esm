@@ -1,3 +1,12 @@
+
+.testimonials__btn{
+  &:hover {
+    transition: 0.5s;
+    background: #CE0032;
+    box-shadow: 0 5px 21px -5px rgba(238, 48, 94, 0.6);
+}
+}
+
 .testimonials__header-block {
   display: flex;
   align-items: flex-end;
@@ -12,7 +21,6 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  //max-width: 1208px;
   padding: 0;
   margin: 0 auto;
   padding-bottom: 112px;
@@ -68,10 +76,23 @@
   }
 
   .swiper-button-next {
-    transform: rotate(180deg);
+    // transform: rotate(180deg);
     order: 3;
     //left: 880px;
     margin-right: 0;
+    position: relative; 
+
+    &::after {
+      content:'';
+      top: 0;
+      left: 0;
+      width: 60px;
+      height: 60px;
+      transform: rotate(180deg);
+      background: #FF124C url("../img/swiper-btn.svg") center center no-repeat;
+    }
+
+
   }
 
   .swiper-button-next::after,
