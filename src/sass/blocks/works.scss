@@ -19,37 +19,15 @@
 .works__item {
     margin-bottom: 25px;
     position: relative;
-    margin-right: 23px;
+    margin-right: 25px;
 
-    &:nth-child(3n) {
+    &:nth-child(2n) {
         margin-right: 0;
     }
 
     & a {
         box-sizing: border-box;
         // border: 7px solid transparent;
-    }
-
-    & img {
-        display: block;
-        height: 295px;
-        width: 295px;
-        outline: 1px solid red;
-        filter: grayscale(100%)
-    }
-
-    &--big img {
-        display: block;
-        height: 295px;
-        width: 570px;
-        outline: 1px solid red;
-        filter: grayscale(100%)
-    }
-
-    & a:hover {
-
-        // border: 7px solid #FF124C;
-        // width: 100%;
         &::before {
             content: '';
             position: absolute;
@@ -60,10 +38,7 @@
             box-sizing: border-box;
             border:14px solid #FF124C;
             z-index: 1;
-        }
-
-        & img {
-            filter: none;
+            opacity: 0;
         }
 
         &::after {
@@ -77,7 +52,45 @@
             transform: translate(-50%, -50%);
             background: url('../img/play.svg') no-repeat 0 0;
             background-size: cover;
+            opacity: 0;
         }
+    }
+
+    & img {
+        display: block;
+        height: 295px;
+        width: 295px;
+        outline: 1px solid red;
+        filter: grayscale(100%)
+    }
+
+    &--big img {
+        display: block;
+        height: 305px;
+        width: auto;
+        outline: 1px solid red;
+        filter: grayscale(100%)
+    }
+
+    & a:hover {
+
+        // border: 7px solid #FF124C;
+        // width: 100%;
+       &::before {
+           transition: 0.3s linear;
+           opacity: 1;
+       }
+
+       &::after {
+        transition: 0.3s linear;
+        opacity: 1;
+    }
+
+        & img {
+            filter: none;
+        }
+
+       
     }
 }
 
@@ -162,7 +175,7 @@
     }
 
     .works__item--big {
-        width: 47%;
+        width: 49%;
 
         & a {
             padding-top: 50%;
@@ -187,6 +200,11 @@
     .works__item {
         width: 48.5%;
         margin-right: 2.5%;
+        margin-bottom: 30px;
+
+        & img {
+            filter: grayscale(0);
+        }
 
         &:nth-child(3n) {
             margin-right: 0;
@@ -232,7 +250,7 @@
     }
     
     .works__item {
-        margin-bottom: 15px;
+        margin-bottom: 25px;
     }
     .works__item--big {
         width: 100%;

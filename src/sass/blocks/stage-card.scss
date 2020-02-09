@@ -6,31 +6,38 @@
     min-height: 220px;
 
     &:hover {
+        transition: 0.5s linear;
         border-color: $red;
         box-shadow: -15px 0px 15px -7px rgba(255, 18, 76, 0.2);;
 
         & img{
+            transition: 0.5s linear;
             filter: grayscale(0);
         }
 
         & .stage-card__number-block {
+            transition: 0.5s linear;
             border-color: $red;
             color: $red;
 
             &::before {
+                transition: 0.5s linear;
                 color: $red;
             }
         }
 
         & .stage-card__name {
+            transition: 0.5s linear;
             color: $red;
         }
 
         & p {
+            transition: 0.5s linear;
             color: #C3C3C3;
         }
 
         & .stage-card__title {
+            transition: 0.5s linear;
             color: $white;
         }
     }
