@@ -34,7 +34,7 @@
       setTimeout(initTeamSwiper, 500)
   })
 }
-
+/*
   var prevBtns = Array.from(document.querySelectorAll('.team__list-btn--prev'));
   var nextBtns = Array.from(document.querySelectorAll('.team__list-btn--next'));
   var teams = Array.from(document.querySelectorAll('.team__list-item'));
@@ -140,4 +140,5 @@ teams[activeIndex].style.paddingTop= 0;
     setTop();
 });
 }
+*/
 })();
