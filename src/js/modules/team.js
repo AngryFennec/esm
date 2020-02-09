@@ -34,17 +34,25 @@
       setTimeout(initTeamSwiper, 500)
   })
 }
-/*
+
+window.wow = new WOW({
+    // settings here
+});
+wow.init();
+
   var prevBtns = Array.from(document.querySelectorAll('.team__list-btn--prev'));
   var nextBtns = Array.from(document.querySelectorAll('.team__list-btn--next'));
   var teams = Array.from(document.querySelectorAll('.team__list-item'));
   var teamSize = teams.length;
   var activeIndex = 0;
   var teamImgs = Array.from(document.querySelectorAll('.team__list-img img'));
+  var teamImgContainers = Array.from(document.querySelectorAll('.team__list-img'));
+  var teamCaps = Array.from(document.querySelectorAll('.team__list-cap'));
   var teamContents = Array.from(document.querySelectorAll('.team__list-content'));
   var teamContent = document.querySelector('.team__content');
+  var roles = Array.from(document.querySelectorAll('.team__roles-link'));
 
-if (teams && prevBtns && nextBtns && teamImgs && teamContents && teamContent) {
+if (teams && prevBtns && nextBtns && teamImgs && teamContents && teamContent && roles && teamImgContainers && teamCaps) {
 
   function teamsRemoveActive() {
     teams.forEach(function(item) {
@@ -53,6 +61,9 @@ if (teams && prevBtns && nextBtns && teamImgs && teamContents && teamContent) {
   }
 
   function setTop() {
+    wow.show(teamContents[activeIndex]);
+    wow.show(teamImgContainers[activeIndex]);
+    wow.show(teamCaps[activeIndex]);
     var top = 0;
     if (window.screen.width >=1024) {
 
@@ -113,6 +124,7 @@ teams[activeIndex].style.paddingTop= 0;
       teams[i + 1].classList.add('team__list-item--active');
       activeIndex = i+1;
     }
+
       setTop();
     });
   });
@@ -130,6 +142,15 @@ teams[activeIndex].style.paddingTop= 0;
       setTop();
     });
   });
+  roles.forEach(function(item, i) {
+    item.addEventListener('click', function(e) {
+      e.preventDefault();
+      teamsRemoveActive();
+      teams[i].classList.add('team__list-item--active');
+      activeIndex  = i;
+      setTop();
+    })
+  })
 
   teamsRemoveActive();
     teams[0].classList.add('team__list-item--active');
@@ -140,5 +161,5 @@ teams[activeIndex].style.paddingTop= 0;
     setTop();
 });
 }
-*/
+
 })();
