@@ -61,9 +61,11 @@ if (teams && prevBtns && nextBtns && teamImgs && teamContents && teamContent && 
   }
 
   function setTop() {
+    console.log(activeIndex);
     wow.show(teamContents[activeIndex]);
     wow.show(teamImgContainers[activeIndex]);
     wow.show(teamCaps[activeIndex]);
+    console.log(teamCaps);
     var top = 0;
     if (window.screen.width >=1024) {
 
@@ -150,13 +152,13 @@ teams[activeIndex].style.paddingTop= 0;
       activeIndex  = i;
       setTop();
     })
-  })
-
+  });
+/*
   teamsRemoveActive();
     teams[0].classList.add('team__list-item--active');
   activeIndex = 0;
   setTop();
-
+*/
   window.addEventListener('resize', function(e) {
     setTop();
 });
