@@ -1,0 +1,90 @@
+.block-404 {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.block-404 .wrapper {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+
+    & p {
+        text-align: center;
+        font-weight: 900;
+        font-size: 40px;
+        line-height: 94%;
+        color: #7E7E7E;
+    }
+
+    & a {
+        display: block;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 94%;
+        letter-spacing: 0.04em;
+        color: #FFFFFF;
+        text-decoration: none;
+        text-align: center;
+        padding-left: 20px;
+        position: relative;
+
+        &::before {
+            content: "";
+            width: 20px;
+            height: 20px;
+            background: url('../img/red-arrow.svg') no-repeat center center;
+            position: absolute;
+            top: 3px;
+            left: 50%;
+            transform: rotate(-180deg) translateX(180px)
+        }
+    }
+}
+
+.block-404_image-block {
+    width: 50%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & img {
+        margin-top: 120px;
+    }
+}
+
+.block-404_text-block {
+    & img {
+        margin-bottom: 120px;
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .block-404 .wrapper {
+        flex-direction: column;
+    }
+
+    .block-404 .block-404_image-block {
+        width: 100%;
+        display: block;
+        text-align: center;
+        min-height: auto;
+        & img {
+            margin-top: 0;
+
+        }
+    }
+
+    .block-404_text-block {
+        width: 100%;
+
+        & img {
+            margin-bottom: 0;
+
+        }
+    }
+}

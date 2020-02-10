@@ -40,6 +40,7 @@
       var swiper = new Swiper(testiSelector,  {
         slidesPerView: 'auto',
           spaceBetween: 30,
+          speed: 1000,
            pagination: {
         el: '.swiper-pagination',
         type: 'progressbar',

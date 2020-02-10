@@ -54,20 +54,25 @@
 }
 
 .header__menu-item a {
+    &::before {
+        content: "";
+        position: absolute;
+        width: 4px;
+        height: 18px;
+        bottom: 0;
+        left: -10px;
+        background: $red;
+        opacity: 0
+    }
 
     &:hover {
-        // transition: 0.1s;
+        transition: 0.1s;
         font-weight: bold;
         position: relative;
 
         &::before {
-            content: "";
-            position: absolute;
-            width: 4px;
-            height: 18px;
-            bottom: 0;
-            left: -10px;
-            background: $red;
+            transition: 0.5s linear;
+            opacity: 1;
         }
     }
 }
