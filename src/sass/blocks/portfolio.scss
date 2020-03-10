@@ -72,7 +72,22 @@
     text-decoration: none;
     position: relative;
     padding-right: 20px;
+    width: 150px;
+    display: block;
 
+    &:hover {
+        font-weight: 700;
+        transition: 0.2s;
+        &::before{
+            content: "";
+            position: absolute;
+            left: -10px;
+            top: 3px;
+            width: 4px;
+            height: 18px;
+            background: $red;
+        }
+    }
     &::after {
         content: "";
         position: absolute;
