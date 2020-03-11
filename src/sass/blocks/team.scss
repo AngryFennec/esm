@@ -224,10 +224,25 @@ white-space: nowrap;
       z-index: 20;
 }
 
+.team__social-link {
+  transition: 0.2s;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.7;
+    transition: 0.2s;
+  }
+}
+
 .team__list-btn {
       z-index: 20;
   border: none;
   background: transparent;
+  transition: 0.2s;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.7;
+    transition: 0.2s;
+  }
 }
 
 .team__roles {
@@ -292,6 +307,18 @@ transition: 0.2s;
   }
 }
 @include tablet {
+
+  .team__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    height: 100%;
+    width: 100%;
+    background: url("../img/team-back-mobile.jpg") no-repeat;
+    background-size: contain;
+  }
+
+
   .team {
     padding-bottom: 20px;
   }
