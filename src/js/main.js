@@ -13,3 +13,4 @@
 //= modules/testimonials.js
 //= modules/promo.js
 //= modules/contacts.js
+//= modules/cookie.js
