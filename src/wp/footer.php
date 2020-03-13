@@ -4,10 +4,9 @@
  *
  * Contains the closing of the #content div and all content after.
  *
- * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
  * @package WordPress
- * @subpackage Twenty_Seventeen
+ * @subpackage ESM
  * @since 1.0
  * @version 1.2
  */
@@ -33,7 +32,7 @@
  <footer class="footer">
     <div class="footer__wrapper wrapper">
       <div class="footer__logo-container">
-        <a href="#"><img src="/wp-content/themes/twentyseventeen/assets/img/logo-svg.svg" alt="logo" class="footer__logo"></a>
+        <a href="#"><img src="/wp-content/themes/esm/assets/img/logo-svg.svg" alt="logo" class="footer__logo"></a>
       </div>
       <div class="footer__content">
         <div class="footer__top">
@@ -56,17 +55,17 @@
           <ul class="footer__social-list">
             <li class="footer__social-item">
               <a class="footer__social-link" href="<?=$section_contacts['insta'];?>">
-                <img src="/wp-content/themes/twentyseventeen/assets/img/social-insta.svg" width="30" height="30" alt="Instagram">
+                <img src="/wp-content/themes/esm/assets/img/social-insta.svg" width="30" height="30" alt="Instagram">
               </a>
             </li>
             <li class="footer__social-item">
               <a class="footer__social-link" href="<?=$section_contacts['vk'];?>">
-                <img src="/wp-content/themes/twentyseventeen/assets/img/social-vk.svg" width="30" height="30" alt="Vkontakte">
+                <img src="/wp-content/themes/esm/assets/img/social-vk.svg" width="30" height="30" alt="Vkontakte">
               </a>
             </li>
             <li class="footer__social-item">
               <a class="footer__social-link" href="<?=$section_contacts['fb'];?>">
-                <img src="/wp-content/themes/twentyseventeen/assets/img/social-fb.svg" width="30" height="30" alt="Facebook">
+                <img src="/wp-content/themes/esm/assets/img/social-fb.svg" width="30" height="30" alt="Facebook">
               </a>
             </li>
           </ul>
@@ -76,12 +75,12 @@
   </footer>
   <?php if($_COOKIE['cookie'] != true) : ?>
   <section class="cookie">
-    <p>Оставаясь на нашем сайте, вы соглашаетесь с использованием файлов cookie. Подробнее в нашей <a href="/policy/<?php echo ($lang===18)  ? '?lang=en' :'?lang=ru' ;?>"><?php echo ($lang===18)  ? 'privacy policy' :'политика конфиденциальности' ;?></a></p>
-    <button class="cookie__button"><img src="/wp-content/themes/twentyseventeen/assets/img/close.svg" alt="button"></button>
+    <p><?php echo ($lang===18)  ? 'Staying on the page you accept using cookies. Learn more in our ' :'Оставаясь на нашем сайте, вы соглашаетесь с использованием файлов cookie. Подробнее в нашей ' ;?> <a href="/policy/<?php echo ($lang===18)  ? '?lang=en' :'?lang=ru' ;?>"><?php echo ($lang===18)  ? 'privacy policy' :'политика конфиденциальности' ;?></a></p>
+    <button class="cookie__button"><img src="/wp-content/themes/esm/assets/img/close.svg" alt="button"></button>
   </section>
   <?php endif; ?>
-  <script src="/wp-content/themes/twentyseventeen/assets/js/vendor.js"></script>
-  <script src="/wp-content/themes/twentyseventeen/assets/js/main.js"></script>
+  <script src="/wp-content/themes/esm/assets/js/vendor.js"></script>
+  <script src="/wp-content/themes/esm/assets/js/main.js"></script>
 <?php wp_footer(); ?>
 
 </body>

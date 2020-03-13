@@ -14,3 +14,4 @@
 //= modules/promo.js
 //= modules/contacts.js
 //= modules/cookie.js
+//= modules/form.js

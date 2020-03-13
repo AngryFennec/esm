@@ -7,10 +7,8 @@
  * It is used to display a page when nothing more specific matches a query.
  * E.g., it puts together the home page when no home.php file exists.
  *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
- *
  * @package WordPress
- * @subpackage Twenty_Seventeen
+ * @subpackage ESM
  * @since 1.0
  * @version 1.0
  */
@@ -126,7 +124,7 @@ get_header();
         
                 <div class="promo__play-block fadeInUp wow">
                     <a href="<?php the_field('event__video');?>" data-fancybox = "promo">
-                    <img src="/wp-content/themes/twentyseventeen/assets/img/play.svg" alt="play video button">
+                    <img src="/wp-content/themes/esm/assets/img/play.svg" alt="play video button">
                     </a>
                     <p class="promo__video-action"><?php $content = ($lang === 18) ?'Watch the video' : 'Смотреть видео'; echo $content;?></p>
                 </div>
@@ -297,31 +295,31 @@ get_header();
             <ul class="team__list-social">
               <li class="team__social-item">
                 <a class="team__social-link" href="<?php the_field('team__insta');?>">
-                  <img src="/wp-content/themes/twentyseventeen/assets/img/social-insta.svg" width="30" height="30" alt="Instagram">
+                  <img src="/wp-content/themes/esm/assets/img/social-insta.svg" width="30" height="30" alt="Instagram">
                 </a>
               </li>
               <li class="team__social-item">
                 <a class="team__social-link" href="<?php the_field('team__vk');?>">
-                  <img src="/wp-content/themes/twentyseventeen/assets/img/social-vk.svg" width="30" height="30" alt="Vkontakte">
+                  <img src="/wp-content/themes/esm/assets/img/social-vk.svg" width="30" height="30" alt="Vkontakte">
                 </a>
               </li>
               <li class="team__social-item">
                 <a class="team__social-link" href="<?php the_field('team__fb');?>">
-                  <img src="/wp-content/themes/twentyseventeen/assets/img/social-fb.svg" width="30" height="30" alt="Facebook">
+                  <img src="/wp-content/themes/esm/assets/img/social-fb.svg" width="30" height="30" alt="Facebook">
                 </a>
               </li>
             </ul>
           </div>
           <div class="team__list-img fadeIn wow" data-wow-delay="0.3s" data-wow-duration="1s">
             <picture>
-              <source srcset="/wp-content/themes/twentyseventeen/assets/img/mob-maxim.png" media="(max-width: 1023px)">
-              <img src="/wp-content/themes/twentyseventeen/assets/img/Max-1.png" alt="Максим" width="1440" height="879">
+              <source srcset="/wp-content/themes/esm/assets/img/mob-maxim.png" media="(max-width: 1023px)">
+              <img src="/wp-content/themes/esm/assets/img/Max-1.png" alt="Максим" width="1440" height="879">
             </picture>
           </div>
           <div class="team__list-cap fadeIn wow" data-wow-delay="0.7s" data-wow-duration="1s">
             <picture>
-              <source srcset="/wp-content/themes/twentyseventeen/assets/img/mob-maxim.png" media="(max-width: 1023px)">
-              <img id = 'team-1' src="/wp-content/themes/twentyseventeen/assets/img/Max-2.png" alt="Максим" width="1440" height="879">
+              <source srcset="/wp-content/themes/esm/assets/img/mob-maxim.png" media="(max-width: 1023px)">
+              <img id = 'team-1' src="/wp-content/themes/esm/assets/img/Max-2.png" alt="Максим" width="1440" height="879">
             </picture>
           </div>
         </li>
@@ -347,17 +345,17 @@ get_header();
             <ul class="team__list-social">
               <li class="team__social-item">
                 <a class="team__social-link" href="<?php the_field('team__insta');?>">
-                  <img src="/wp-content/themes/twentyseventeen/assets/img/social-insta.svg" width="30" height="30" alt="Instagram">
+                  <img src="/wp-content/themes/esm/assets/img/social-insta.svg" width="30" height="30" alt="Instagram">
                 </a>
               </li>
               <li class="team__social-item">
                 <a class="team__social-link" href="<?php the_field('team__vk');?>">
-                  <img src="/wp-content/themes/twentyseventeen/assets/img/social-vk.svg" width="30" height="30" alt="Vkontakte">
+                  <img src="/wp-content/themes/esm/assets/img/social-vk.svg" width="30" height="30" alt="Vkontakte">
                 </a>
               </li>
               <li class="team__social-item">
                 <a class="team__social-link" href="<?php the_field('team__fb');?>">
-                  <img src="/wp-content/themes/twentyseventeen/assets/img/social-fb.svg" width="30" height="30" alt="Facebook">
+                  <img src="/wp-content/themes/esm/assets/img/social-fb.svg" width="30" height="30" alt="Facebook">
                 </a>
               </li>
             </ul>
@@ -365,14 +363,14 @@ get_header();
 
           <div class="team__list-img fadeIn wow" data-wow-delay="0.3s" data-wow-duration="1s">
             <picture>
-              <source srcset="/wp-content/themes/twentyseventeen/assets/img/mob-vitaly.png" media="(max-width: 1023px)">
-              <img id = 'team-2' src="/wp-content/themes/twentyseventeen/assets/img/vitaly-1.png" alt="Виталий" width="1440" height="879">
+              <source srcset="/wp-content/themes/esm/assets/img/mob-vitaly.png" media="(max-width: 1023px)">
+              <img id = 'team-2' src="/wp-content/themes/esm/assets/img/vitaly-1.png" alt="Виталий" width="1440" height="879">
             </picture>
           </div>
           <div class="team__list-cap fadeIn wow" data-wow-delay="0.7s" data-wow-duration="1s">
             <picture>
-              <source srcset="/wp-content/themes/twentyseventeen/assets/img/mob-vitaly.png" media="(max-width: 1023px)">
-              <img src="/wp-content/themes/twentyseventeen/assets/img/vitaly-2.png" alt="Виталий" width="1440" height="879">
+              <source srcset="/wp-content/themes/esm/assets/img/mob-vitaly.png" media="(max-width: 1023px)">
+              <img src="/wp-content/themes/esm/assets/img/vitaly-2.png" alt="Виталий" width="1440" height="879">
             </picture>
           </div>
         </li>
@@ -398,17 +396,17 @@ get_header();
             <ul class="team__list-social">
               <li class="team__social-item">
                 <a class="team__social-link" href="<?php the_field('team__insta');?>">
-                  <img src="/wp-content/themes/twentyseventeen/assets/img/social-insta.svg" width="30" height="30" alt="Instagram">
+                  <img src="/wp-content/themes/esm/assets/img/social-insta.svg" width="30" height="30" alt="Instagram">
                 </a>
               </li>
               <li class="team__social-item">
                 <a class="team__social-link" href="<?php the_field('team__vk');?>">
-                  <img src="/wp-content/themes/twentyseventeen/assets/img/social-vk.svg" width="30" height="30" alt="Vkontakte">
+                  <img src="/wp-content/themes/esm/assets/img/social-vk.svg" width="30" height="30" alt="Vkontakte">
                 </a>
               </li>
               <li class="team__social-item">
                 <a class="team__social-link" href="<?php the_field('team__fb');?>">
-                  <img src="/wp-content/themes/twentyseventeen/assets/img/social-fb.svg" width="30" height="30" alt="Facebook">
+                  <img src="/wp-content/themes/esm/assets/img/social-fb.svg" width="30" height="30" alt="Facebook">
                 </a>
               </li>
             </ul>
@@ -416,14 +414,14 @@ get_header();
 
           <div class="team__list-img fadeIn wow" data-wow-delay="0.3s" data-wow-duration="1s">
             <picture>
-              <source srcset="/wp-content/themes/twentyseventeen/assets/img/mob-gleb.png" media="(max-width: 1023px)">
-              <img src="/wp-content/themes/twentyseventeen/assets/img/gleb-1.png" alt="Глеб" width="1440" height="879">
+              <source srcset="/wp-content/themes/esm/assets/img/mob-gleb.png" media="(max-width: 1023px)">
+              <img src="/wp-content/themes/esm/assets/img/gleb-1.png" alt="Глеб" width="1440" height="879">
             </picture>
           </div>
           <div class="team__list-cap fadeIn wow" data-wow-delay="0.7s" data-wow-duration="1s">
             <picture>
-              <source srcset="/wp-content/themes/twentyseventeen/assets/img/mob-gleb.png" media="(max-width: 1023px)">
-              <img src="/wp-content/themes/twentyseventeen/assets/img/gleb-2.png" alt="Глеб" width="1440" height="879">
+              <source srcset="/wp-content/themes/esm/assets/img/mob-gleb.png" media="(max-width: 1023px)">
+              <img src="/wp-content/themes/esm/assets/img/gleb-2.png" alt="Глеб" width="1440" height="879">
             </picture>
           </div>
         </li>
@@ -449,17 +447,17 @@ get_header();
             <ul class="team__list-social">
               <li class="team__social-item">
                 <a class="team__social-link" href="<?php the_field('team__insta');?>">
-                  <img src="/wp-content/themes/twentyseventeen/assets/img/social-insta.svg" width="30" height="30" alt="Instagram">
+                  <img src="/wp-content/themes/esm/assets/img/social-insta.svg" width="30" height="30" alt="Instagram">
                 </a>
               </li>
               <li class="team__social-item">
                 <a class="team__social-link" href="<?php the_field('team__vk');?>">
-                  <img src="/wp-content/themes/twentyseventeen/assets/img/social-vk.svg" width="30" height="30" alt="Vkontakte">
+                  <img src="/wp-content/themes/esm/assets/img/social-vk.svg" width="30" height="30" alt="Vkontakte">
                 </a>
               </li>
               <li class="team__social-item">
                 <a class="team__social-link" href="<?php the_field('team__fb');?>">
-                  <img src="/wp-content/themes/twentyseventeen/assets/img/social-fb.svg" width="30" height="30" alt="Facebook">
+                  <img src="/wp-content/themes/esm/assets/img/social-fb.svg" width="30" height="30" alt="Facebook">
                 </a>
               </li>
             </ul>
@@ -467,14 +465,14 @@ get_header();
 
           <div class="team__list-img fadeIn wow" data-wow-delay="0.3s" data-wow-duration="1s">
             <picture>
-              <source srcset="/wp-content/themes/twentyseventeen/assets/img/mob-julia.png" media="(max-width: 1023px)">
-              <img src="/wp-content/themes/twentyseventeen/assets/img/julia-1.png" alt="Юлия" width="1440" height="879">
+              <source srcset="/wp-content/themes/esm/assets/img/mob-julia.png" media="(max-width: 1023px)">
+              <img src="/wp-content/themes/esm/assets/img/julia-1.png" alt="Юлия" width="1440" height="879">
             </picture>
           </div>
           <div class="team__list-cap fadeIn wow" data-wow-delay="0.7s" data-wow-duration="1s">
             <picture>
-              <source srcset="/wp-content/themes/twentyseventeen/assets/img/mob-maxim.png" media="(max-width: 1023px)">
-              <img src="/wp-content/themes/twentyseventeen/assets/img/julia-2.png" alt="Юлия" width="1440" height="879">
+              <source srcset="/wp-content/themes/esm/assets/img/mob-maxim.png" media="(max-width: 1023px)">
+              <img src="/wp-content/themes/esm/assets/img/julia-2.png" alt="Юлия" width="1440" height="879">
             </picture>
           </div>
         </li>
@@ -500,12 +498,12 @@ get_header();
             <ul class="team__list-social">
               <li class="team__social-item">
                 <a class="team__social-link" href="<?php the_field('team__insta');?>">
-                  <img src="/wp-content/themes/twentyseventeen/assets/img/social-insta.svg" width="30" height="30" alt="Instagram">
+                  <img src="/wp-content/themes/esm/assets/img/social-insta.svg" width="30" height="30" alt="Instagram">
                 </a>
               </li>
               <li class="team__social-item">
                 <a class="team__social-link" href="<?php the_field('team__vk');?>">
-                  <img src="/wp-content/themes/twentyseventeen/assets/img/social-vk.svg" width="30" height="30" alt="Vkontakte">
+                  <img src="/wp-content/themes/esm/assets/img/social-vk.svg" width="30" height="30" alt="Vkontakte">
                 </a>
               </li>
             </ul>
@@ -513,14 +511,14 @@ get_header();
 
           <div class="team__list-img fadeIn wow" data-wow-delay="0.3s" data-wow-duration="1s">
             <picture>
-              <source srcset="/wp-content/themes/twentyseventeen/assets/img/mob-denis.png" media="(max-width: 1023px)">
-              <img src="/wp-content/themes/twentyseventeen/assets/img/denis-1.png" alt="Денис" width="1440" height="879">
+              <source srcset="/wp-content/themes/esm/assets/img/mob-denis.png" media="(max-width: 1023px)">
+              <img src="/wp-content/themes/esm/assets/img/denis-1.png" alt="Денис" width="1440" height="879">
             </picture>
           </div>
           <div class="team__list-cap fadeIn wow" data-wow-delay="0.7s" data-wow-duration="1s">
             <picture>
-              <source srcset="/wp-content/themes/twentyseventeen/assets/img/mob-denis.png" media="(max-width: 1023px)">
-              <img src="/wp-content/themes/twentyseventeen/assets/img/denis-2.png" alt="Денис" width="1440" height="879">
+              <source srcset="/wp-content/themes/esm/assets/img/mob-denis.png" media="(max-width: 1023px)">
+              <img src="/wp-content/themes/esm/assets/img/denis-2.png" alt="Денис" width="1440" height="879">
             </picture>          </div>
         </li>
         <?php endif;?>
